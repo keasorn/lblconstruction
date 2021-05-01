@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="css/custom.css"/>
 
 
+    <link rel="stylesheet" href="css/desoslide/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="css/desoslide/jquery.desoslide.css">
+
+
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -1244,25 +1248,25 @@ function compress($source)
                         <ul id="slideshow3_thumbs" class="desoslide-thumbs-vertical list-inline">
                             <li>
                                 <a href="{{compress('images/p1.png')}}">
-                                    <img src="{{compress('images/p1.png')}}"
+                                    <img src="{{compress('images/p1.png')}}" alt="no image"
                                          style="display: block;padding:5px;width:100%;height: 200px;object-fit: cover;">
                                 </a>
                             </li>
                             <li>
                                 <a href="images/p2.png">
-                                    <img src="{{compress('images/p2.png')}}"
+                                    <img src="{{compress('images/p2.png')}}" alt="no image"
                                          style="display: block;padding:5px;width:100%;height: 200px;object-fit: cover;">
                                 </a>
                             </li>
                             <li>
                                 <a href="images/p3.png">
-                                    <img src="{{compress('images/p3.png')}}"
+                                    <img src="{{compress('images/p3.png')}}" alt="no image"
                                          style="display: block;padding:5px;width:100%;height: 200px;object-fit: cover;">
                                 </a>
                             </li>
                             <li>
                                 <a href="images/p4.png">
-                                    <img src="{{compress('images/p4.png')}}"
+                                    <img src="{{compress('images/p4.png')}}" alt="no image"
                                          style="display: block;padding:5px;width:100%;height: 200px;object-fit: cover;">
                                 </a>
                             </li>
@@ -1299,7 +1303,12 @@ function compress($source)
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/responsiveslides.js"></script>
 <script src="js/main.js"></script>
+
+{{--<script src="js/desoslide/vendor/highlight/highlight.pack.js"></script>--}}
+<script src="js/desoslide/app/demo.js"></script>
+<script src="js/desoslide/jquery.desoslide.min.js"></script>
 
 <script type='text/javascript'>
     $(document).ready(function () {
