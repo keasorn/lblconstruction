@@ -3815,8 +3815,6 @@ section > .overlay {
 /* line 112, ../sass/style.scss */
 .cont-box {
   overflow: hidden;
-  padding-bottom: 100px;
-  padding-top: 100px;
 }
 /* line 116, ../sass/style.scss */
 .cont-box .box-title {
@@ -3848,15 +3846,15 @@ section > .overlay {
 }
 /* line 142, ../sass/style.scss */
 .preloader .preload-img {
-  background-image: url(../images/preloader.svg);
+  background-image: url(../images/preloader.gif);
   background-position: center;
   background-repeat: no-repeat;
-  height: 30px;
+  height: 100px;
   left: 50%;
   margin: -15px 0 0 -15px;
   position: absolute;
   top: 50%;
-  width: 30px;
+  width: 100px;
 }
 /* line 153, ../sass/style.scss */
 .preloader.page-preloader {
@@ -3898,13 +3896,12 @@ section > .overlay {
   bottom: 0;
   height: auto;
   max-width: inherit;
-  min-height: 100%;
   min-width: 100%;
   position: absolute;
   right: 0;
   vertical-align: top;
   width: auto;
-  z-index: 0;
+  z-index: 0 !important;
 }
 
 /* Parallax styles
@@ -5764,7 +5761,7 @@ section > .overlay {
 }
 /* line 1961, ../sass/style.scss */
 .sliders .sliders-preloader .full-width .pre-img {
-  background-image: url(../images/preloader.svg);
+  background-image: url(../images/preloader.gif);
   background-repeat: no-repeat;
   height: 30px;
   left: 50%;
@@ -9390,3 +9387,4 @@ embed, iframe, object, video, audio {
     text-align: center;
   }
 }
+
