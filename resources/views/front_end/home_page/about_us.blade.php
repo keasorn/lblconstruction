@@ -45,7 +45,7 @@
                                                             alt="card image"></p>
                                                     <h4 class="card-title">Name number#{{$i}}</h4>
                                                     <p class="card-text">Summary Info #{{$i}}</p>
-                                                    <a href="https://www.fiverr.com/share/qb8D02"
+                                                    <a href="#none"
                                                        class="btn btn-primary btn-sm"><i class="fa fa-plus text-white"></i></a>
                                                 </div>
                                             </div>
@@ -59,7 +59,7 @@
                                                         <li class="list-inline-item">
                                                             <a class="social-icon text-xs-center"
                                                                target="_blank"
-                                                               href="https://www.fiverr.com/share/qb8D02">
+                                                               href="#none">
                                                                 <i class="fa fa-facebook"></i>
                                                             </a>
                                                         </li>

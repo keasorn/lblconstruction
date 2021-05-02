@@ -1,5 +1,6 @@
 <!-- They Recommend Us -->
 <div style="clear:both"></div>
+
 <section id="careers">
     <div class="container-fluid">
         <div class="clearfix"></div>
@@ -12,7 +13,7 @@
 
             <div class="row">
                 <div class="col-xs-12" style="text-align:center; padding: 60px 0px 60px 0px;">
-                    <div style="font-size: 40px; font-weight: 100; color: #FFF;">You can work for us</div>
+                    <div style="font-size: 30px; font-weight: 100; color: #FFF;">You can work for us</div>
                 </div>
 
                 <div class="col-sx-12">
@@ -20,52 +21,22 @@
 
                     <div class='row'>
                         <div class='col-md-12'>
-                            <div class="carousel slide media-carousel" id="media">
-                                <div class="carousel-inner">
-                                    @for($i=1;$i<=3;$i++)
-                                        <div class="item  {{$i==1?"active":""}}">
-                                            <div class="row">
-
-                                                <div class="col-md-3">
-                                                    <div style="font-weight:bold;" class="text-white">CONTRACT MANAGER
-                                                    </div>
-                                                    <div style="font-weight:100; margin-top:0px;" class="text-white">
-                                                        Phnom Penh, Cambodia<br/> Full-time
-                                                        <br/> Posted 2 weeks ago
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div style="font-weight:bold;" class="text-white">CONTRACT MANAGER
-                                                    </div>
-                                                    <div style="font-weight:100; margin-top:0px;" class="text-white">
-                                                        Phnom Penh, Cambodia<br/> Full-time
-                                                        <br/> Posted 2 weeks ago
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div style="font-weight:bold;" class="text-white">CONTRACT MANAGER
-                                                    </div>
-                                                    <div style="font-weight:100; margin-top:0px;" class="text-white">
-                                                        Phnom Penh, Cambodia<br/> Full-time
-                                                        <br/> Posted 2 weeks ago
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div style="font-weight:bold;" class="text-white">CONTRACT MANAGER
-                                                    </div>
-                                                    <div style="font-weight:100; margin-top:0px;" class="text-white">
-                                                        Phnom Penh, Cambodia<br/> Full-time
-                                                        <br/> Posted 2 weeks ago
-                                                    </div>
-                                                </div>
-
+                            <section class="customer-logos slider">
+                                @for($i=1;$i<=8;$i++)
+                                    <div class="slide">
+                                        <div class="row">
+                                            <div style="font-weight:bold;" class="text-white">CONTRACT MANAGER
                                             </div>
+                                            <div style="font-weight:100; margin-top:0px;" class="text-white">
+                                                Phnom Penh, Cambodia<br/> Full-time
+                                                <br/> Posted 2 weeks ago
+                                            </div>
+
                                         </div>
-                                    @endfor
-                                </div>
-                                <a data-slide="prev" href="#media" class="left carousel-control text-white">‹</a>
-                                <a data-slide="next" href="#media" class="right carousel-control text-white">›</a>
-                            </div>
+                                    </div>
+                                @endfor
+                            </section>
+
                         </div>
                     </div>
                     <!-- /carusel-4 -->

@@ -19,201 +19,25 @@
 
                 <div class="col-sx-12" style="margin-bottom:60px;">
                     <div class="row" style="color: #FFF; text-align:center;">
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
+                        @for($i=1;$i<=10;$i++)
+                            <div class="cus_they_recommend_us image-frame">
+
+                                <div style="padding:30px;">
+
+                                    <h5 class="text-white">Company #{{$i}}</h5>
+                                    <img src="images/patner.png" style="width:90%"/>
+                                    <div class="image-caption">
                                         <span>
                                             "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
                                         </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
+                                        <div>
+                                            <i>Denis Blosse - Chief Technical Officer</i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cus_they_recommend_us image-frame">
-                            <div style="padding:30px;">
-                                <img src="images/rec_logo1.png" style="width:90%"/>
-                                <div class="image-caption">
-                                        <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
-                                        </span>
-                                    <div>
-                                        <i>Denis Blosse - Chief Technical Officer</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endfor
+
                     </div>
                 </div>
             </div>
