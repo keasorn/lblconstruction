@@ -21,6 +21,8 @@ class MyUtility extends Controller
     //put your code here
 
 
+     public static $index = 0;
+
     // dd-mm-yyyy --> y-m-d
     public static function toMySqlDate($strDate)
     {
@@ -146,7 +148,27 @@ class MyUtility extends Controller
         }
     }
 
-
+    public static function getProgressStatus($percentage){
+        if ($percentage<1){
+            return "On hold";
+        }elseif ($percentage<25){
+            return "In Start";
+        }elseif ($percentage<100){
+            return "In progress";
+        }elseif ($percentage>99){
+            return "Completed";
+        }
+    }    public static function getBgProgressColorStatus($percentage){
+        if ($percentage<1){
+            return "deep-orange";
+        }elseif ($percentage<25){
+            return "pink";
+        }elseif ($percentage<100){
+            return "blue";
+        }elseif ($percentage>99){
+            return "green";
+        }
+    }
     public static function getProjectStatusName($status)
     {
         switch ($status) {

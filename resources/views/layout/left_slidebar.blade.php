@@ -1,4 +1,3 @@
-
 <section>
     <!-- Left Sidebar -->
     <aside id="leftsidebar" class="sidebar">
@@ -23,61 +22,44 @@
         <!-- Menu -->
         <div class="menu">
             <ul class="list">
-                <li class="active">
+                <li class="{{ (request()->is('*dashboard*')) ? 'active' : '' }}">
                     <a href="/admin/dashboard">
                         <i class="material-icons">home</i>
                         <span>Home</span>
                     </a>
                 </li>
-                <li>
-                    <a href="/pages/helper-classes.html">
-                        <i class="material-icons">title</i>
-                        <span>Website Info/label</span>
-                    </a>
-                </li>
-                <li>
+
+                <li class="{{ (request()->is(['*admin*'])) ? 'active' : '' }}">
                     <a href="#none" class="menu-toggle">
                         <i class="material-icons">widgets</i>
                         <span>Widgets</span>
                     </a>
                     <ul class="ml-menu">
+                        <li class="{{ (request()->is('*header*')) ? 'active' : '' }}">
+                            <a href="/admin/header">Heading Section</a>
+                        </li>
+                        <li class="{{ (request()->is('*company_profile*')) ? 'active' : '' }}">
+                            <a href="/admin/company_profile">Company Profile Section</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none" class="menu-toggle">
+                        <i class="material-icons">settings</i>
+                        <span>Setting</span>
+                    </a>
+                    <ul class="ml-menu">
                         <li>
                             <a href="#none" class="menu-toggle">
-                                <span>Cards</span>
+                                <i class="material-icons">title</i>
+                                <span>Website Info/label</span>
                             </a>
-                            <ul class="ml-menu">
-                                <li>
-                                    <a href="/pages/widgets/cards/basic.html">Basic</a>
-                                </li>
-                                <li>
-                                    <a href="/pages/widgets/cards/colored.html">Colored</a>
-                                </li>
-                                <li>
-                                    <a href="/pages/widgets/cards/no-header.html">No Header</a>
-                                </li>
-                            </ul>
                         </li>
                         <li>
                             <a href="#none" class="menu-toggle">
-                                <span>Infobox</span>
+                                <i class="material-icons">people</i>
+                                <span>User</span>
                             </a>
-                            <ul class="ml-menu">
-                                <li>
-                                    <a href="/pages/widgets/infobox/infobox-1.html">Infobox-1</a>
-                                </li>
-                                <li>
-                                    <a href="/pages/widgets/infobox/infobox-2.html">Infobox-2</a>
-                                </li>
-                                <li>
-                                    <a href="/pages/widgets/infobox/infobox-3.html">Infobox-3</a>
-                                </li>
-                                <li>
-                                    <a href="/pages/widgets/infobox/infobox-4.html">Infobox-4</a>
-                                </li>
-                                <li>
-                                    <a href="/pages/widgets/infobox/infobox-5.html">Infobox-5</a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </li>

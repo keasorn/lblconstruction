@@ -36,11 +36,33 @@
                                         </span>
                             </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-4">
                             <b>Description</b>
                             <div class="input-group colorpicker">
                                 <div class="form-line">
                                     <input type="text" class="form-control" value="" name="description" required>
+                                </div>
+                                <span class="input-group-addon">
+                                            <i></i>
+                                        </span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <b>Order Task</b>
+                            <div class="input-group colorpicker">
+                                <div class="form-line">
+                                    <input type="number" max="100" min="0" class="form-control" value="" name="order" required>
+                                </div>
+                                <span class="input-group-addon">
+                                            <i></i>
+                                        </span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <b>Completed Task</b>
+                            <div class="input-group colorpicker">
+                                <div class="form-line">
+                                    <input type="number" max="100" min="0" class="form-control" value="" name="progress" required>
                                 </div>
                                 <span class="input-group-addon">
                                             <i></i>

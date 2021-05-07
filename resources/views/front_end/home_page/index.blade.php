@@ -23,8 +23,8 @@
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
             a = s.createElement(o),
                 m = s.getElementsByTagName(o)[0];
             a.async = 1;
@@ -189,8 +189,9 @@
         .scroll_2::-webkit-scrollbar-thumb:hover {
             background: #aaaaaa;
         }
+
         .bg-left {
-            background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
         }
 
         /*-----------------*/
@@ -327,62 +328,64 @@
         .text-white {
             color: #ffffff;
         }
-        .media-carousel
-        {
+
+        .media-carousel {
             margin-bottom: 0;
             padding: 0 40px 30px 40px;
             margin-top: 30px;
         }
+
         /* Previous button  */
-        .media-carousel .carousel-control.left
-        {
+        .media-carousel .carousel-control.left {
             left: -12px;
             background-image: none;
             background: none repeat scroll 0 0 #222222;
             border: 4px solid #FFFFFF;
             border-radius: 23px 23px 23px 23px;
             height: 40px;
-            width : 40px;
+            width: 40px;
             margin-top: 30px
         }
+
         /* Next button  */
-        .media-carousel .carousel-control.right
-        {
+        .media-carousel .carousel-control.right {
             right: -12px !important;
             background-image: none;
             background: none repeat scroll 0 0 #222222;
             border: 4px solid #FFFFFF;
             border-radius: 23px 23px 23px 23px;
             height: 40px;
-            width : 40px;
+            width: 40px;
             margin-top: 30px
         }
+
         /* Changes the position of the indicators */
-        .media-carousel .carousel-indicators
-        {
+        .media-carousel .carousel-indicators {
             right: 50%;
             top: auto;
             bottom: 0px;
             margin-right: -19px;
         }
+
         /* Changes the colour of the indicators */
-        .media-carousel .carousel-indicators li
-        {
+        .media-carousel .carousel-indicators li {
             background: #c0c0c0;
         }
-        .media-carousel .carousel-indicators .active
-        {
+
+        .media-carousel .carousel-indicators .active {
             background: #333333;
         }
-        .media-carousel img
-        {
+
+        .media-carousel img {
             width: 250px;
             height: 100px
         }
-        h2{
-            text-align:center;
+
+        h2 {
+            text-align: center;
             padding: 20px;
         }
+
         /* Slider */
 
         .slick-slide {
@@ -393,8 +396,7 @@
             width: 100%;
         }
 
-        .slick-slider
-        {
+        .slick-slider {
             position: relative;
             display: block;
             box-sizing: border-box;
@@ -409,27 +411,25 @@
             -webkit-tap-highlight-color: transparent;
         }
 
-        .slick-list
-        {
+        .slick-list {
             position: relative;
             display: block;
             overflow: hidden;
             margin: 0;
             padding: 0;
         }
-        .slick-list:focus
-        {
+
+        .slick-list:focus {
             outline: none;
         }
-        .slick-list.dragging
-        {
+
+        .slick-list.dragging {
             cursor: pointer;
             cursor: hand;
         }
 
         .slick-slider .slick-track,
-        .slick-slider .slick-list
-        {
+        .slick-slider .slick-list {
             -webkit-transform: translate3d(0, 0, 0);
             -moz-transform: translate3d(0, 0, 0);
             -ms-transform: translate3d(0, 0, 0);
@@ -437,65 +437,64 @@
             transform: translate3d(0, 0, 0);
         }
 
-        .slick-track
-        {
+        .slick-track {
             position: relative;
             top: 0;
             left: 0;
             display: block;
         }
+
         .slick-track:before,
-        .slick-track:after
-        {
+        .slick-track:after {
             display: table;
             content: '';
         }
-        .slick-track:after
-        {
+
+        .slick-track:after {
             clear: both;
         }
-        .slick-loading .slick-track
-        {
+
+        .slick-loading .slick-track {
             visibility: hidden;
         }
 
-        .slick-slide
-        {
+        .slick-slide {
             display: none;
             float: left;
             height: 100%;
             min-height: 1px;
         }
-        [dir='rtl'] .slick-slide
-        {
+
+        [dir='rtl'] .slick-slide {
             float: right;
         }
-        .slick-slide img
-        {
+
+        .slick-slide img {
             display: block;
         }
-        .slick-slide.slick-loading img
-        {
+
+        .slick-slide.slick-loading img {
             display: none;
         }
-        .slick-slide.dragging img
-        {
+
+        .slick-slide.dragging img {
             pointer-events: none;
         }
-        .slick-initialized .slick-slide
-        {
+
+        .slick-initialized .slick-slide {
             display: block;
         }
-        .slick-loading .slick-slide
-        {
+
+        .slick-loading .slick-slide {
             visibility: hidden;
         }
-        .slick-vertical .slick-slide
-        {
+
+        .slick-vertical .slick-slide {
             display: block;
             height: auto;
             border: 1px solid transparent;
         }
+
         .slick-arrow.slick-hidden {
             display: none;
         }
@@ -530,11 +529,11 @@ function compress($source)
 
 <body class="front-page">
 <div class="company_profile_box">
-    <a href="#">
-        <i class="fa fa-download" aria-hidden="true"></i> Company Profile
+    <a {{$profileCompany == null?'href="#"':'href='.$profileCompany.' target="_blank"'}}">
+    <i class="fa fa-download" aria-hidden="true"></i> Company Profile
     </a>
 </div>
-<div class="preloader page-preloader">
+<div class="preloader page-preloader text-center">
     <div class="preload-img"></div>
 </div>
 
@@ -550,13 +549,13 @@ function compress($source)
         <div class="bar3"></div>
     </div>
     @include("front_end.home_page.primary_header")
-    @include("front_end.home_page.about_us")
-    @include("front_end.home_page.design_and_build")
-    @include("front_end.home_page.gallery")
-    @include("front_end.home_page.careers")
-    @include("front_end.home_page.recommend")
+{{--    @include("front_end.home_page.about_us")--}}
+{{--    @include("front_end.home_page.design_and_build")--}}
+{{--    @include("front_end.home_page.gallery")--}}
+{{--    @include("front_end.home_page.careers")--}}
+{{--    @include("front_end.home_page.recommend")--}}
 
-    @include("front_end.home_page.footer")
+{{--    @include("front_end.home_page.footer")--}}
 
 </div>
 <!-- / wrapper-->
@@ -569,7 +568,7 @@ function compress($source)
 <script src="js/slick.js"></script>
 
 
-<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
 <script src="js/main.js"></script>
 
 
@@ -585,7 +584,8 @@ function compress($source)
         $("#my_home_text").fadeToggle();
         $("#my_home_scroll").fadeToggle();
     }
-    $(document).ready(function(){
+
+    $(document).ready(function () {
         $('.customer-logos').slick({
             slidesToShow: 6,
             slidesToScroll: 1,

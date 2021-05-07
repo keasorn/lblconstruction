@@ -16,8 +16,8 @@ class TaskController extends Controller
     public function index()
     {
         //
-        $tasks = Task::paginate(10);
-        // return $ProductTypes;
+        $tasks = Task::orderBy("order")->get();
+        // return $Tasks;
         $data = array(
             'tasks' => $tasks
         );
@@ -43,7 +43,7 @@ class TaskController extends Controller
      */
     public  function fill(Request $request){
         $data = $request->except("_token");
-        $data["create_by"]=1;
+        $data["created_by"]=1;
         $data["start_date"]=MyUt::toMySqlDate($request->start_date);
         $data["complete_date"]=MyUt::toMySqlDate($request->complete_date);
         return $data;
@@ -93,7 +93,8 @@ class TaskController extends Controller
     public function edit($id)
     {
         //
-        return view('back_end.task_mgt_page.edit');
+        $task =Task::find($id);
+        return view('back_end.task_mgt_page.edit',compact('task'));
 
     }
 
@@ -106,7 +107,14 @@ class TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $this->fill($request);
+        $task =  Task::find($id);
+        $task->fill($data);
+        if($task->save()){
+            return redirect(route("task.index"));
+        }else{
+            return "Insert data fails";
+        }
     }
 
     /**
@@ -118,5 +126,12 @@ class TaskController extends Controller
     public function destroy($id)
     {
         //
+        $Task = Task::find($id);
+        $result = $Task->delete();
+        if ($result) {
+            return redirect(route("task.index"));
+        } else {
+            return "Update to Taske table false.";
+        }
     }
 }

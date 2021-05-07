@@ -4,22 +4,20 @@
         <div class="row">
             <div class="primary-banner-text text-left" id="my_home_text">
                 <div class="my_home_text_sub"
-                     style="font-weight: bold; font-size: 50px; color: #fff; padding-left: 150px;">A Construction
-                    Pioneer
+                     style="font-weight: bold; font-size: 50px; color: #fff; padding-left: 150px;">{{$header->title}}
                 </div>
                 <div class="my_home_text_sub"
-                     style="color: #fff; font-size: 30px; font-weight:100; padding-left: 150px;">Read LBL'S Company
-                    Profile
+                     style="color: #fff; font-size: 30px; font-weight:100; padding-left: 150px;">{{$header->description}}
                 </div>
                 <div class="my_home_text_sub" style="padding-left: 150px;">
                     <div style="color: #fff; font-size: 30px; font-weight:100; float: left; margin-right: 20px;">And
                         follow us on
                     </div>
-                    <a href="#" class="social_icon" style="float: left; margin-right: 15px;"><img
+                    <a href="{{$header->facebook}}" class="social_icon" style="float: left; margin-right: 15px;"><img
                                 src="images/Icon awesome-facebook-f.svg"/></a>
-                    <a href="#" class="social_icon" style="float: left; margin-right: 15px;"><img
+                    <a href="{{$header->instagram}}" class="social_icon" style="float: left; margin-right: 15px;"><img
                                 src="images/Icon feather-instagram.svg"/></a>
-                    <a href="#" class="social_icon" style="float: left;"><img
+                    <a href="{{$header->linkin}}" class="social_icon" style="float: left;"><img
                                 src="images/Icon awesome-linkedin-in.svg"/></a>
                 </div>
             </div>
@@ -29,7 +27,7 @@
             <!-- title-blogtop -->
             <div class="col-xs-12 first-page" id="primary-banner-title">
                 <div class="inner-info-block">
-                    <a href="/"><img src="/images/logo.png" style="width: 100px; margin: 10px;"/></a>
+                    <a href="/"><img src="{{$header->logo}}" style="width: 100px; margin: 10px;"/></a>
                 </div>
             </div>
             <!-- / title-blogtop -->
@@ -37,16 +35,19 @@
             <!-- Slider -->
             <div class="background bg-video cus_header">
                 <div class="layer darken-pseudo cus_main_image"
-                     style="background-image: url({{compress('images/home_bg.png')}});">
-                    <div class="cus_main_image_sub" data-toggle="modal" data-target="#firstVideoPopUp">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
-                    </div>
+                     style="background-image: url({{$header->background_mobile}});">
+{{--                    <div class="cus_main_image_sub" data-toggle="modal" data-target="#firstVideoPopUp">--}}
+{{--                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>--}}
+{{--                    </div>--}}
                 </div>
-                <video autoplay muted loop id="myVideo" class="cus_main_video">
-                    <source src="media/header.mp4" type="video/mp4">
-                    <source src="media/cloud.ogg" type="video/ogg">
-                    <source src="media/cloud.webm" type="video/webm">
-                </video>
+                <div id="myVideo" class="layer darken-pseudo cus_main_video" style="background-image: url({{$header->background_pc}});">
+
+                </div>
+{{--                <video autoplay muted loop id="myVideo" class="cus_main_video">--}}
+{{--                    <source src="media/header.mp4" type="video/mp4">--}}
+{{--                    <source src="media/cloud.ogg" type="video/ogg">--}}
+{{--                    <source src="media/cloud.webm" type="video/webm">--}}
+{{--                </video>--}}
             </div>
             <!-- / Slider -->
         </div>
