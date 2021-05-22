@@ -21,7 +21,7 @@
                     </div>
                     <div class="content">
                         <div class="text">Total Visitor</div>
-                        <div class="number count-to" data-from="0" data-to="300" data-speed="1000"
+                        <div class="number count-to" data-from="0" data-to="{{$totalVisitor}}" data-speed="1000"
                              data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -32,8 +32,8 @@
                         <i class="material-icons">alarm_on</i>
                     </div>
                     <div class="content">
-                        <div class="text">This month</div>
-                        <div class="number count-to" data-from="0" data-to="257" data-speed="1000"
+                        <div class="text">Last month</div>
+                        <div class="number count-to" data-from="0" data-to="{{$monthVisitor}}" data-speed="1000"
                              data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -44,8 +44,8 @@
                         <i class="material-icons">date_range</i>
                     </div>
                     <div class="content">
-                        <div class="text">This week</div>
-                        <div class="number count-to" data-from="0" data-to="243" data-speed="1000"
+                        <div class="text">Last week</div>
+                        <div class="number count-to" data-from="0" data-to="{{$weekVisitor}}" data-speed="1000"
                              data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="content">
                         <div class="text">Today</div>
-                        <div class="number count-to" data-from="0" data-to="1225" data-speed="1000"
+                        <div class="number count-to" data-from="0" data-to="{{$todayVisitor}}" data-speed="1000"
                              data-fresh-interval="20"></div>
                     </div>
                 </div>

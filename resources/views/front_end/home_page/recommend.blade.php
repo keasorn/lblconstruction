@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="clearfix"></div>
         <div class="background">
-            <div class="layer" style="background: url({{compress('images/design_build_bg.png')}});"></div>
+            <div class="layer" style="background: url(images/design_build_bg.png);"></div>
             <div class="layer" style="background: rgba(21, 33, 45, 0.95);"></div>
         </div>
 
@@ -19,25 +19,23 @@
 
                 <div class="col-sx-12" style="margin-bottom:60px;">
                     <div class="row" style="color: #FFF; text-align:center;">
-                        @for($i=1;$i<=10;$i++)
-                            <div class="cus_they_recommend_us image-frame">
-
-                                <div style="padding:30px;">
-
-                                    <h5 class="text-white">Company #{{$i}}</h5>
-                                    <img src="images/patner.png" style="width:90%"/>
-                                    <div class="image-caption">
+                        @if($recommends)
+                            @foreach($recommends as $row)
+                                <div class="image-frame col-lg-2 col-md-3 col-sm-6">
+                                    <div style="padding:30px;">
+                                        <img src="{{$row->logo}}" style="width:90%" class="">
+                                        <div class="image-caption" style="display: none;">
                                         <span>
-                                            "High level quality standard as Airport is expecting. All projects completed on time and in budget with good quality and no injuries."
+                                            {{$row->description}}
                                         </span>
-                                        <div>
-                                            <i>Denis Blosse - Chief Technical Officer</i>
+                                            <div>
+                                                <i>{{$row->title}}</i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        @endfor
-
+                            @endforeach
+                        @endif
                     </div>
                 </div>
             </div>

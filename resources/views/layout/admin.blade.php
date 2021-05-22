@@ -98,6 +98,7 @@
 @yield("js-script")
 <!-- Demo Js -->
 <script src="/js/demo.js"></script>
+<script src="/js/myscript.js"></script>
 </body>
 
 </html>

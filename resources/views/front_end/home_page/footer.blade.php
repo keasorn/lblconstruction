@@ -43,9 +43,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 cus_a_contruction"
                      style="font-size:30px; color:#3f62af; text-align:left; font-weight:100;">
-                    A Contruction, Architecture,<br/> Refurbishment, Public work,<br/> Engineering and
-                    Development<br/>
-                    company in Cambodia.
+                    {{$label->slogan}}
                 </div>
                 <div class="col-xs-12 col-sm-3 col-md-3" style="color:#3f62af; text-align:left;">
                     <div class="cus_a_contruction cus_a_contruction_con" style="font-weight:500; font-size:30px;">
@@ -54,9 +52,7 @@
                     <br/>
                     <br/>
                     <div class="cus_a_contruction_sub" style="font-size: 14px; font-weight:100; line-height: 25px;">
-                        43 Sihanouk boulevard,<br/> Phnom Penh BP 609<br/> (855) 23 215 296<br/> Sales:
-                        sales@lbl-group
-                        .com<br/> Careers: jobs@lbl-group.com<br/> Suppliers: purchasing@lbl-group.com
+                        {{$label->contact}}
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-3 col-md-3">
@@ -65,30 +61,23 @@
                             <ul class="single-page-nav single_page_nav"
                                 style="list-style: none; text-align: right;">
                                 <li><a href="#primary-banner" class="cus_a_contruction"
-                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">Home</a>
+                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">{{$label->home}}</a>
                                 </li>
                                 <li><a href="#about-us" class="cus_a_contruction"
-                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">About
-                                        Us</a>
+                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">{{$label->about_us}}</a>
                                 </li>
                                 <li><a href="#design-build" class="cus_a_contruction"
-                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">Design
-                                        &amp;
-                                        Build</a></li>
+                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">{{$label->desing}}</a></li>
                                 <li><a href="#projects" class="cus_a_contruction"
-                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">Projects</a>
+                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">{{$label->project}}</a>
                                 </li>
                                 <li><a href="#they-recommend-us" class="cus_a_contruction"
-                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">They
-                                        Recommend
-                                        Us</a></li>
+                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">{{$label->recommend}}</a></li>
                                 <li><a href="#careers" class="cus_a_contruction"
-                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">Careers</a>
+                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">{{$label->career}}</a>
                                 </li>
                                 <li><a href="#awards-media" class="cus_a_contruction"
-                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">Awards
-                                        &amp;
-                                        Media</a></li>
+                                       style="color: #3f62af !important;font-weight:300; font-size:25px;">{{$label->award}}</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -97,15 +86,15 @@
 
             <div class="row" style="padding:30px 0px;">
                 <div class="col-xs-12 col-sm-6 col-md-6" style="color:#3f62af; text-align:left;">
-                    <span class="corp cus_footer_copyright">Copyrights &copy; 2020 LBL International - All rights reserved</span>
+                    <span class="corp cus_footer_copyright">{{$label->copyrights}}</span>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 main_cus_social_icon"
                      style="color:#3f62af; text-align:left;">
-                    <a href="#" class="social_icon cus_social_icon1" style="float: left; margin-right: 30px;"><img
+                    <a href="{{$header->facebook}}" class="social_icon cus_social_icon1" style="float: left; margin-right: 30px;"><img
                                 src="images/Icon awesome-facebook-f.svg"/></a>
-                    <a href="#" class="social_icon cus_social_icon2" style="float: left; margin-right: 30px;"><img
+                    <a href="{{$header->instagram}}" class="social_icon cus_social_icon2" style="float: left; margin-right: 30px;"><img
                                 src="images/Icon feather-instagram.svg"/></a>
-                    <a href="#" class="social_icon cus_social_icon3" style="float: left;"><img
+                    <a href="{{$header->linkedin}}" class="social_icon cus_social_icon3" style="float: left;"><img
                                 src="images/Icon awesome-linkedin-in.svg"/></a>
                 </div>
             </div>

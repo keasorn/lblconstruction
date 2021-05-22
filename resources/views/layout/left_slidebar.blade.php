@@ -41,16 +41,28 @@
                         <li class="{{ (request()->is('*company_profile*')) ? 'active' : '' }}">
                             <a href="/admin/company_profile">Company Profile Section</a>
                         </li>
+                        <li class="{{ (request()->is('*about_us*')) ? 'active' : '' }}">
+                            <a href="/admin/about_us">About Us Section</a>
+                        </li>
+                        <li class="{{ (request()->is('*team*')) ? 'active' : '' }}">
+                            <a href="/admin/team">Team Section</a>
+                        </li>
+{{--                        <li class="{{ (request()->is('*design_build*')) ? 'active' : '' }}">--}}
+{{--                            <a href="/admin/design_build">Design and Build Section</a>--}}
+{{--                        </li>--}}
+                        <li class="{{ (request()->is('*recommend*')) ? 'active' : '' }}">
+                            <a href="/admin/recommend">Recommend Company Section</a>
+                        </li>
                     </ul>
                 </li>
-                <li>
+                <li class="{{ (request()->is(['*admin*'])) ? 'active' : '' }}">
                     <a href="#none" class="menu-toggle">
                         <i class="material-icons">settings</i>
                         <span>Setting</span>
                     </a>
                     <ul class="ml-menu">
-                        <li>
-                            <a href="#none" class="menu-toggle">
+                        <li class="{{ (request()->is('*recommend*')) ? 'active' : '' }}">
+                            <a href="/admin/web_label" class="menu-toggle">
                                 <i class="material-icons">title</i>
                                 <span>Website Info/label</span>
                             </a>

@@ -36,18 +36,23 @@
             <div class="background bg-video cus_header">
                 <div class="layer darken-pseudo cus_main_image"
                      style="background-image: url({{$header->background_mobile}});">
-{{--                    <div class="cus_main_image_sub" data-toggle="modal" data-target="#firstVideoPopUp">--}}
-{{--                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>--}}
-{{--                    </div>--}}
+                    @if($header->background_pc == "/uploading/files/background_pc.mp4")
+                        <div class="cus_main_image_sub" data-toggle="modal" data-target="#firstVideoPopUp">
+                            <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                        </div>
+                    @endif
                 </div>
-                <div id="myVideo" class="layer darken-pseudo cus_main_video" style="background-image: url({{$header->background_pc}});">
-
-                </div>
-{{--                <video autoplay muted loop id="myVideo" class="cus_main_video">--}}
-{{--                    <source src="media/header.mp4" type="video/mp4">--}}
-{{--                    <source src="media/cloud.ogg" type="video/ogg">--}}
-{{--                    <source src="media/cloud.webm" type="video/webm">--}}
-{{--                </video>--}}
+                @if($header->background_pc != "/uploading/files/background_pc.mp4")
+                    <div id="myVideo" class="layer darken-pseudo cus_main_video"
+                         style="background-image: url({{$header->background_pc}});">
+                    </div>
+                @else
+                    <video autoplay muted loop id="myVideo" class="cus_main_video">
+                        <source src="{{$header->background_pc}}" type="video/mp4">
+                        <source src="media/cloud.ogg" type="video/ogg">
+                        <source src="media/cloud.webm" type="video/webm">
+                    </video>
+                @endif
             </div>
             <!-- / Slider -->
         </div>
@@ -56,17 +61,14 @@
             <div class="primary-banner-text">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-4 cus_construction_menu" style="color: #fff; font-size: 30px; font-weight:100;">
-                    A Construction, Architechture,<br/> Refurbishment, Public work,<br/> Engineering and Development<br/>
-                    company in Camboida
+                    {{$label->slogan}}
                 </div>
                 <div class="col-sm-3 cus_contact_menu" style="color: #fff; font-size: 22px;">
                     Contacts<br/>
                     <br/>
                     <div class="col-sm-10 cus_contact_menu_sub"
                          style="color: #fff; font-size: 16px; font-weight:100; line-height: 25px;">
-                        43 Sihanouk boulevard,<br/> Phnom Penh BP 609<br/> (855) 23 215 296<br/> Sales:
-                        sales@lbl-group.com<br/> Careers: jobs@lbl-group.com<br/> Suppliers: purchasing@lbl-group
-                        .com
+                        {{$label->contact}}
                     </div>
                 </div>
                 <div class="col-sm-3 " style="color: #fff; font-size: 22px;">
@@ -74,19 +76,16 @@
                         <nav>
                             <ul class="single-page-nav" style="list-style: none; text-align: right;">
                                 <li><a href="#primary-banner"
-                                       style="color: #fff !important; font-weight:300;">Home</a></li>
-                                <li><a href="#about-us" style="color: #fff !important; font-weight:300;">About
-                                        Us</a></li>
-                                <li><a href="#design-build" style="color: #fff !important; font-weight:300;">Design
-                                        &amp; Build</a></li>
+                                       style="color: #fff !important; font-weight:300;"> {{$label->home}}</a></li>
+                                <li><a href="#about-us" style="color: #fff !important; font-weight:300;"> {{$label->about_us}}</a></li>
+                                <li><a href="#design-build" style="color: #fff !important; font-weight:300;"> {{$label->design}}</a></li>
                                 <li><a href="#projects"
-                                       style="color: #fff !important; font-weight:300;">Projects</a></li>
-                                <li><a href="#they-recommend-us" style="color: #fff !important; font-weight:300;">They
-                                        Recommend Us</a></li>
-                                <li><a href="#careers" style="color: #fff !important; font-weight:300;">Careers</a>
+                                       style="color: #fff !important; font-weight:300;"> {{$label->project}}</a></li>
+                                <li><a href="#they-recommend-us" style="color: #fff !important; font-weight:300;">
+                                        {{$label->recommend}}</a></li>
+                                <li><a href="#careers" style="color: #fff !important; font-weight:300;"> {{$label->career}}</a>
                                 </li>
-                                <li><a href="#footer" style="color: #fff !important; font-weight:300;">Awards &amp;
-                                        Media</a></li>
+                                <li><a href="#footer" style="color: #fff !important; font-weight:300;"> {{$label->award}}</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -96,7 +95,7 @@
                 <div class="col-sm-1"></div>
                 <div class="col-sm-10 cus_copyright_menu"
                      style="color: #fff; font-size: 14px; margin-top: 30px; font-weight:100;">
-                    Copyrights @ 2020 LBL International - All rights reserved
+                    {{$label->copyrights}}
                 </div>
                 <div class="col-sm-1"></div>
             </div>
@@ -119,7 +118,6 @@
     </div>
 </section>
 <!--  / Primary-banner -->
-
 <!-- Modal First Video -->
 <div class="modal fade" id="firstVideoPopUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
@@ -133,7 +131,7 @@
             </div>
             <div class="modal-body">
                 <video autoplay muted loop id="myVideo">
-                    <source src="media/header.mp4" type="video/mp4">
+                    <source src="{{$header->background_pc}}" type="video/mp4">
                     <source src="media/cloud.ogg" type="video/ogg">
                     <source src="media/cloud.webm" type="video/webm">
                 </video>

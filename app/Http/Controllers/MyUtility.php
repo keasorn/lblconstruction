@@ -396,4 +396,19 @@ class MyUtility extends Controller
         DB::insert(DB::raw("CREATE TEMPORARY TABLE `" . $tmpTable . "` as " . $sql));
         return $tmpTable;
     }
+
+    public static function laravelUploadImg($request, $file_name, $path, $name = false)
+    {
+        if ($request->hasFile($file_name)) {
+            $image = $request->file($file_name);
+            if (!$name) {
+                $name = uniqid();
+            }
+            $destinationPath = public_path($path);
+            $name = $name . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $name);
+        }
+        return "/" . $path . "/" . $name;
+
+    }
 }

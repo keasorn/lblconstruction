@@ -549,13 +549,12 @@ function compress($source)
         <div class="bar3"></div>
     </div>
     @include("front_end.home_page.primary_header")
-{{--    @include("front_end.home_page.about_us")--}}
+    @include("front_end.home_page.about_us")
 {{--    @include("front_end.home_page.design_and_build")--}}
 {{--    @include("front_end.home_page.gallery")--}}
 {{--    @include("front_end.home_page.careers")--}}
-{{--    @include("front_end.home_page.recommend")--}}
-
-{{--    @include("front_end.home_page.footer")--}}
+    @include("front_end.home_page.recommend")
+    @include("front_end.home_page.footer")
 
 </div>
 <!-- / wrapper-->
