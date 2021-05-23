@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Career extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'position',
+        'schedule',
+        'location',
+        'status',
+        'date_post',
+        'order',
+        'created_by',
+    ];
 }

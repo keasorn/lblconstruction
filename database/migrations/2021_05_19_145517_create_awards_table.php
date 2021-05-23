@@ -15,6 +15,12 @@ class CreateAwardsTable extends Migration
     {
         Schema::create('awards', function (Blueprint $table) {
             $table->id();
+            $table->string("title");
+            $table->string("description");
+            $table->string("logo");
+            $table->integer("order");
+            $table->bigInteger("created_by")->unsigned();
+            $table->foreign('created_by')->references('id')->on('users');
             $table->timestamps();
         });
     }

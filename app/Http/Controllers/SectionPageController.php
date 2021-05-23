@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
+use App\Models\Archive;
+use App\Models\DesingBuild;
 use App\Models\Header;
 use App\Models\Label;
 use App\Models\SectionPage;
@@ -69,6 +71,34 @@ class SectionPageController extends Controller
         return redirect()->back();
     }
 
+    public function archive(Request $request)
+    {
+        $data = $request->except("_token");
+        $data["created_by"] = Auth::id();
+        $model = Archive::find(1);
+        $model->update($data);
+        $model->save();
+        return redirect("/admin/project");
+    }
+
+    public function desginBuild(Request $request)
+    {
+//        return $request->all();
+        $design_bg = $this->uploadImg($request, "design_bg", "uploading/files", "design_bg");
+        $build_bg = $this->uploadImg($request, "build_bg", "uploading/files", "build_bg");
+        $design_build_bg = $this->uploadImg($request, "design_build_bg", "uploading/files", "design_build_bg");
+        $data = $request->except("_token");
+
+        if ($request->design_bg) $data["design_bg"] = $design_bg;
+        if ($request->build_bg) $data["build_bg"] = $build_bg;
+        if ($request->design_build_bg) $data["design_build_bg"] = $design_build_bg;
+        $data["created_by"] = Auth::id();
+        $model = DesingBuild::find(1);
+        $model->update($data);
+        $model->save();
+        return redirect()->back();
+    }
+
     public function about(Request $request)
     {
 //        return $request->all();
@@ -90,10 +120,9 @@ class SectionPageController extends Controller
 
     public function label(Request $request)
     {
-//        return $request->all();
         $data = $request->except("_token");
         $data["created_by"] = Auth::id();
-        $model = Label::find(1);
+        $model = Label::first();
         $model->update($data);
         $model->save();
         return redirect()->back();

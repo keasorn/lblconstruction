@@ -148,6 +148,27 @@ function initializeMap($body){
   }
   // modify the coordinates of the map
 
+  setTimeout(function(){
+    var mapOptions = {
+      zoom: 10,
+      draggable: false,
+      disableDefaultUI: true,
+      disableDoubleClickZoom: true,
+
+      scrollwheel: false,
+      center: new google.maps.LatLng(choordsMap1, choordsMap2)
+      // 41.2, -73.98
+    },
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions),
+    image = 'images/marker.png',
+    myLatLng = new google.maps.LatLng(40.756168, num2), //num2
+    beachMarker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image,
+      title: 'Manhattan'
+    });
+  },0);  
 }
 
 /* ------------- Carousel -----------------*/
@@ -166,6 +187,50 @@ function initCarousels(){
     $('button.next').each(function(index){
       $(this).addClass('next'+index);
     });
+
+    setTimeout(function(){
+      initCaroucel = $('#'+self.attr('id'));
+
+      initCaroucel.carouFredSel({
+        responsive: true,
+        width: '100%',
+        prev: prevBtn,
+        next: nextBtn,
+        scroll: {
+          items: 1,
+          speed: 500,
+          timeoutDuration:300000},
+       
+        items: {
+          width: widthItem,
+          height: 'auto',
+          visible: {
+            min: 1,
+            max: maxItem
+          }
+        },
+        onCreate: function(){
+          self.addClass('init');
+          self.parent().add(self).css('height', self.children().first().height() + 'px');
+          setTimeout(function() {
+            self.parent().add(self).css('height', self.children().first().height() + 'px');
+          }, 500);
+          // !!!! перевірити на сторінці елементів
+          var top = self.find('.img-block img').height();
+          self.closest('.post-slider, .posted-slider, .slider-people').find('.prev, .next').css('top', top / 2);
+        }
+      }).touchwipe({
+          wipeLeft: function() {
+            console.log('touchswipe work!!!!!!!!!');
+            initCaroucel.trigger('next', 1);
+          },
+          wipeRight: function() {
+            initCaroucel.trigger('prev', 1);
+          },
+          preventDefaultEvents: false
+        });
+      
+    },0);
   });
 }
 
@@ -283,7 +348,17 @@ function getPrevID(current_element_id) {
   }
   return prevAlbomID;
 }
- 
+
+function getJsonArray(elements, callback_success, callback_error) {
+  $.getJSON(portfolioConfig, function(data) {     
+    for (index = 0; index < elements.length; ++index) {
+      // buildAlbumSlider(elements[index], data[elements[index]]);
+    }
+    if (callback_success && typeof(callback_success) === "function") {
+      callback_success(data);
+    }
+  });
+}
 
 function getJsonID(id, callback_success, callback_error) {
   -$.getJSON(portfolioConfig, function(data) {
@@ -658,23 +733,23 @@ $(document).ready(function(){
 
   /* Current Navigation 
   --------------------------------------------------------------------*/ 
-  // $windowBrowser.on('scroll', function() {
-  //
-  //   // menu waypoint
-  //   $(link).each(function(index) {
-  //     var $this  = $(this),
-  //       scrollPos = $windowBrowser.scrollTop()+1,
-  //       refElement = $($this.attr('href')),
-  //       thisTop = refElement.position().top;
-  //
-  //     if (thisTop <= scrollPos &&
-  //         thisTop + refElement.innerHeight() > scrollPos) {
-  //       $(link).removeClass('current');
-  //       $this.addClass('current');
-  //     } else $this.removeClass('current');
-  //   });
-  //
-  // });
+  $windowBrowser.on('scroll', function() {
+
+    // menu waypoint
+    $(link).each(function(index) {
+      var $this  = $(this),
+        scrollPos = $windowBrowser.scrollTop()+1,
+        refElement = $($this.attr('href')),
+        thisTop = refElement.position().top;
+
+      if (thisTop <= scrollPos &&
+          thisTop + refElement.innerHeight() > scrollPos) {
+        $(link).removeClass('current');
+        $this.addClass('current');
+      } else $this.removeClass('current');
+    });
+      
+  });
 
   /* Active Navigation 
   --------------------------------------------------------------------*/ 

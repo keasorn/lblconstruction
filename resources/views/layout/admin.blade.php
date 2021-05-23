@@ -18,7 +18,7 @@
 
     @yield("css-script")
     <!-- Custom Css -->
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/admin_style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="/css/themes/all-themes.css" rel="stylesheet"/>

@@ -23,7 +23,7 @@
                     <div class="body">
                         <div class="row clearfix">
                             <div class="col-md-12">
-                                <b>Company Name</b>
+                                <b>Title</b>
                                 <div class="input-group colorpicker">
                                     <div class="form-line">
                                         <input type="text" class="form-control" value="{{$award->title}}" name="title" required>
@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <h4>Logo</h4>
+                                <h4>Image</h4>
                                 <div class="form-group">
                                     <input type="file" name="logo"
                                            multiple="" accept="image/*" onchange="readURL(this,'logo_id');">

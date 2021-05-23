@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Award extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'title',
+        'description',
+        'logo',
+        'order',
+        'created_by',
+    ];
 }

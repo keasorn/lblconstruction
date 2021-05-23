@@ -15,6 +15,14 @@ class CreateCareersTable extends Migration
     {
         Schema::create('careers', function (Blueprint $table) {
             $table->id();
+            $table->string("position");
+            $table->string("schedule");
+            $table->string("location");
+            $table->string("status");
+            $table->integer("order");
+            $table->date("date_post");
+            $table->bigInteger("created_by")->unsigned();
+            $table->foreign('created_by')->references('id')->on('users');
             $table->timestamps();
         });
     }

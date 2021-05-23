@@ -21,7 +21,7 @@ class MyUtility extends Controller
     //put your code here
 
 
-     public static $index = 0;
+    public static $index = 0;
 
     // dd-mm-yyyy --> y-m-d
     public static function toMySqlDate($strDate)
@@ -136,6 +136,7 @@ class MyUtility extends Controller
             return null;
         }
     }
+
     public static function formatThousand($val, $decimals = 0)
     {
         if (($val == 0) or ($val == "0")) {
@@ -148,27 +149,32 @@ class MyUtility extends Controller
         }
     }
 
-    public static function getProgressStatus($percentage){
-        if ($percentage<1){
+    public static function getProgressStatus($percentage)
+    {
+        if ($percentage < 1) {
             return "On hold";
-        }elseif ($percentage<25){
+        } elseif ($percentage < 25) {
             return "In Start";
-        }elseif ($percentage<100){
+        } elseif ($percentage < 100) {
             return "In progress";
-        }elseif ($percentage>99){
+        } elseif ($percentage > 99) {
             return "Completed";
         }
-    }    public static function getBgProgressColorStatus($percentage){
-        if ($percentage<1){
+    }
+
+    public static function getBgProgressColorStatus($percentage)
+    {
+        if ($percentage < 1) {
             return "deep-orange";
-        }elseif ($percentage<25){
+        } elseif ($percentage < 25) {
             return "pink";
-        }elseif ($percentage<100){
+        } elseif ($percentage < 100) {
             return "blue";
-        }elseif ($percentage>99){
+        } elseif ($percentage > 99) {
             return "green";
         }
     }
+
     public static function getProjectStatusName($status)
     {
         switch ($status) {
@@ -344,6 +350,48 @@ class MyUtility extends Controller
             return "background-color: white;";
 
         }
+    }
+
+    public static function countDate($ptime, $showAll = false)
+    {
+        $estring = "";
+        // Past time as MySQL DATETIME value
+        $ptime = strtotime($ptime);
+
+        // Current time as MySQL DATETIME value
+        $csqltime = date('Y-m-d');
+
+        // Current time as Unix timestamp
+        $ctime = strtotime($csqltime);
+
+        // Elapsed time
+        $etime = $ctime - $ptime;
+
+
+        // If no elapsed time, return 0
+        if ($etime < 1) {
+            if (!$showAll) {
+                return 'Today';
+            } else {
+                return '0 seconds';
+            }
+        }
+
+        $a = array(365 * 24 * 60 * 60 => 'year',
+            30 * 24 * 60 * 60 => 'month',
+            7 * 24 * 60 * 60 => 'week',
+            24 * 60 * 60 => 'day',
+            60 * 60 => 'hour',
+            60 => 'minute',
+            1 => 'second'
+        );
+        foreach ($a as $secs => $str) {
+            $a = intdiv($etime, $secs);
+            $etime = $etime % $secs;
+            $estring = $estring . ($a > 0 ? $a == 1 ? $a . " $str " : $a . " $str" . "s" : "");
+            if ($a > 0 && !$showAll) break;
+        }
+        return $estring . " ago";
     }
 
 

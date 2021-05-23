@@ -1,0 +1,1089 @@
+    .design_and_build {
+        font-size: 80px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 190px;
+        z-index: 1111;
+        left: -33px;
+    }
+
+    .cus_they_recommend_us {
+        width: 20%;
+        float: left;
+    }
+
+    .cus_ycwfus {
+        margin-left: 40px;
+        color: white;
+    }
+
+    .company_profile_box {
+        width: 200px;
+        height: 45px;
+        position: fixed;
+        bottom: 50px;
+        right: 70px;
+        z-index: 111;
+    }
+
+    .company_profile_box a {
+        width: 200px;
+        height: 45px;
+        background-color: rgba(45, 100, 175, 0.9);
+        color: white;
+        float: left;
+        text-align: center;
+        line-height: 3.2;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+
+    .popupAboutUsContant {
+        padding: 30px;
+    }
+
+    .popupCareerContant {
+        padding: 20px 30px 40px 30px;
+    }
+
+    .popupCareerText {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #style-4::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: transparent;
+    }
+
+    #style-4::-webkit-scrollbar {
+        width: 2px;
+        background-color: transparent;
+    }
+
+    #style-4::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border: 1px solid #2861af;
+    }
+
+    .image-frame {
+        float: left;
+        position: relative;
+        /* margin: 5px; */
+        color: #333;
+        text-align: left;
+    }
+
+    .image-frame .image-caption {
+        display: none;
+        opacity: 0.8;
+        background: transparent;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        padding: 5px;
+    }
+
+    .image-caption span {
+        font-size: 12px;
+        line-height: 1.5;
+        float: left;
+        color: #fff;
+    }
+
+    .image-caption div {
+        font-size: 12px;
+        margin-top: 10px;
+        float: left;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .j_show {
+        opacity: 1;
+    }
+
+    .j_hide {
+        opacity: 0;
+    }
+
+    .h_grayscale {
+        -webkit-filter: grayscale(70%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(70%);
+    }
+
+    .f_grayscale {
+        -webkit-filter: grayscale(0%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+    }
+
+    #popupViewGallery {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #popupViewGallery>div {
+        margin: 10% auto;
+    }
+
+    .animated {
+        display: block;
+        padding-right: 15px;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #slideshow3_thumbs {
+        margin-top: -5px !important;
+        height: 405px;
+        overflow-y: scroll;
+        padding: 0px;
+    }
+
+    #slideshow3_thumbs::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: transparent;
+    }
+
+    #slideshow3_thumbs::-webkit-scrollbar {
+        width: 2px;
+        background-color: transparent;
+    }
+
+    #slideshow3_thumbs::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border: 1px solid #2861af;
+    }
+
+    .desoslide-overlay {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        background-color: black;
+        height: 75vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #myVideo {
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .cus_contact_navigation {
+        margin-top: -12px;
+    }
+
+    .cus_main_image {
+        display: none;
+    }
+
+    .cus_main_video {
+        display: block;
+    }
+
+    .modal-header .close {
+        margin-top: -35px !important;
+    }
+
+    .close {
+        font-size: 35px !important;
+    }
+
+    .cus_career_back {
+        height: 100%;
+    }
+
+    @media only screen and (max-width: 1199px) {
+        .cus_about_mobile {
+            height: 350px !important;
+        }
+        .tbod {
+            width: 50% !important;
+            text-align: center !important;
+        }
+        .tbod b {
+            font-size: 22px !important;
+        }
+        .tbod p {
+            font-size: 18px !important;
+        }
+        .cont-box {
+            padding-bottom: 50px !important;
+        }
+        .cus_journey {
+            margin-top: -83px !important;
+        }
+        .cus_gallery_text {
+            padding: 20px !important;
+        }
+        .cus_gallery_text_first {
+            height: 280px !important;
+        }
+        .cus_gallery_text_second {
+            height: 300px !important;
+        }
+        .cus_gallery_text_thirt {
+            margin-top: 10px !important;
+            height: 210px !important;
+        }
+        .cus_main_image {
+            display: none;
+        }
+        .cus_main_video {
+            display: block;
+        }
+        .cus_they_recommend_us {
+            width: 20%;
+            float: left !important;
+        }
+        .cus_career_back {
+            height: 500px !important;
+        }
+        .cus_career_background {
+            height: 500px !important;
+        }
+        #footer {
+            margin-top: -7px !important;
+        }
+        .cus_a_contruction {
+            font-size: 18px !important;
+        }
+        .cus_a_contruction_sub {
+            font-size: 14px !important;
+            margin-top: -30px !important;
+        }
+        .cus_footer_copyright {
+            font-size: 18px !important;
+        }
+    }
+
+    @media only screen and (max-width: 899px) {
+        .my_home_text_sub {
+            padding-left: 50px !important;
+        }
+        .cus_about_mobile {
+            height: 270px !important;
+        }
+        .tbod {
+            width: 50% !important;
+            text-align: center !important;
+        }
+        .tbod b {
+            font-size: 18px !important;
+        }
+        .tbod p {
+            font-size: 14px !important;
+        }
+        .cont-box {
+            padding-bottom: 0px !important;
+        }
+        .containet-fluid {
+            margin-top: -3px !important;
+        }
+        .design_and_build {
+            font-size: 60px !important;
+            left: -25px !important;
+            z-index: 1111 !important;
+        }
+        .cus_journey {
+            margin-top: -124px !important;
+        }
+        .cus_journey_sub {
+            margin-top: -190px !important;
+            float: left;
+        }
+        .cus_journey_sub_container {
+            padding: 0px !important;
+        }
+        .cus_journey_sub_p {
+            font-size: 14px !important;
+        }
+        .cus_journey_sub_title {
+            font-size: 26px !important;
+            margin-top: -30px;
+            padding-bottom: 60px !important;
+        }
+        .h_grayscale_first {
+            height: 526px !important;
+        }
+        .cus_gallery_text_thirt {
+            font-size: 14px !important;
+        }
+        .cus_gallery_text_second div {
+            font-size: 14px !important;
+        }
+        .cus_main_image {
+            display: none;
+        }
+        .cus_main_video {
+            display: block;
+        }
+        .cus_they_recommend_us {
+            width: 50%;
+            float: left !important;
+        }
+        .cus_career_back {
+            height: 481px !important;
+        }
+        .cus_career_background {
+            height: 500px !important;
+        }
+        #footer {
+            margin-top: -71px !important;
+        }
+        .cus_a_contruction {
+            font-size: 16px !important;
+        }
+        .cus_a_contruction_sub {
+            font-size: 13px !important;
+            margin-top: -30px !important;
+        }
+        .cus_footer_copyright {
+            font-size: 16px !important;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .tbod {
+            width: 50% !important;
+            text-align: center !important;
+        }
+        .cus_construction_menu {
+            margin-left: 0px !important;
+            float: left;
+            font-size: 22px !important;
+            margin-top: -295px !important;
+            width: 100% !important;
+            text-align: center !important;
+        }
+        .cus_contact_menu {
+            float: left;
+            margin-left: 20px;
+            text-align: left !important;
+            margin-top: -50px;
+            font-size: 22px !important;
+        }
+        .cus_contact_menu_sub {
+            margin-top: -25px !important;
+        }
+        .cus_contact_navigation {
+            position: absolute;
+            right: 20px;
+            bottom: 40px !important;
+            font-size: 22px !important;
+        }
+        .cus_copyright_menu {
+            text-align: center;
+            font-size: 12px !important;
+        }
+        .company_profile_box {
+            bottom: 30px;
+            right: 30px;
+        }
+        .cus_the_board_of_directior {
+            font-size: 26px !important;
+        }
+        .design_and_build {
+            top: -60px !important;
+            font-size: 30px !important;
+            color: #3f62af;
+            width: 100% !important;
+            left: 0px !important;
+            z-index: 111 !important;
+        }
+        .containet-fluid {
+            margin-top: 150px !important;
+        }
+        .cus_first_video {
+            margin-top: 20px !important;
+            height: 340px !important;
+        }
+        .cus_second_video {
+            margin-top: 30px !important;
+            height: 340px !important;
+        }
+        #myVideoFirst {
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            height: 340px !important;
+        }
+        #myVideoSecond {
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            height: 340px !important;
+        }
+        .cus_journey {
+            margin-top: 30px !important;
+        }
+        .cus_journey {
+            margin-top: -124px !important;
+        }
+        .cus_journey_sub {
+            margin-top: -190px !important;
+            float: left;
+            text-align: center !important;
+        }
+        .cus_journey_sub_container {
+            padding: 0px !important;
+        }
+        .cus_journey_sub_p {
+            font-size: 14px !important;
+            padding-right: 0px !important;
+        }
+        .cus_journey_sub_title {
+            font-size: 26px !important;
+            margin-top: -30px;
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_first {
+            height: auto !important;
+            margin-top: -150px !important;
+            padding-right: 0px !important;
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_3 {
+            height: auto !important;
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_3_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 40% !important;
+            padding: 6px 30px;
+        }
+        .h_grayscale_4 {
+            padding-bottom: 0px !important;
+            padding-right: 0px !important;
+        }
+        .h_grayscale_5 {
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_6 {
+            height: auto !important;
+            padding-right: 0px !important;
+            width: 100% !important;
+        }
+        .h_grayscale_6_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 40% !important;
+            padding: 6px 30px;
+        }
+        .h_grayscale_7 {
+            height: auto !important;
+            padding-right: 0px !important;
+            width: 100% !important;
+        }
+        .h_grayscale_7_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 40% !important;
+            padding: 6px 30px;
+        }
+        .cus_main_image {
+            display: none;
+        }
+        .cus_main_video {
+            display: block;
+        }
+        .cus_they_recommend_us {
+            width: 50%;
+            float: left !important;
+        }
+        .cus_ycwfus {
+            text-align: center !important;
+            margin-left: 10px !important;
+        }
+        .cus_career_back {
+            height: 481px !important;
+        }
+        .cus_career_background {
+            height: 500px !important;
+        }
+        #footer {
+            margin-top: -4px !important;
+        }
+        .cus_footer_logo {
+            text-align: center !important;
+        }
+        .cus_footer_logo_list {
+            text-align: center !important;
+        }
+        .cus_a_contruction {
+            font-size: 16px !important;
+            text-align: center !important;
+        }
+        .cus_a_contruction_sub {
+            font-size: 13px !important;
+            margin-top: -30px !important;
+            text-align: center !important;
+        }
+        .cus_footer_copyright {
+            font-size: 16px !important;
+            text-align: center !important;
+            height: 70px !important;
+        }
+        .cus_a_contruction_con {
+            margin-top: 25px !important;
+        }
+        .single_page_nav {
+            margin-left: -20px !important;
+            margin-top: 30px !important;
+        }
+        .single_page_nav li {
+            text-align: center !important;
+        }
+        .main_cus_social_icon {
+            padding-left: 38% !important;
+        }
+        .cus_social_icon1 {
+            width: 15% !important;
+            float: left !important;
+            margin-right: 0px !important;
+        }
+        .cus_social_icon2 {
+            width: 17% !important;
+            float: left !important;
+            margin-right: 0px !important;
+        }
+        .cus_social_icon3 {
+            width: 15% !important;
+            float: left !important;
+            margin-right: 0px !important;
+        }
+        .main_slideshow3_thumbs {
+            margin-left: -2px;
+            ;
+        }
+        #slideshow3_thumbs {
+            margin-top: 15px !important;
+            margin-left: -9px !important;
+        }
+        #slideshow3_thumbs li {
+            width: 33.3% !important;
+            float: left !important;
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+        .tbod {
+            width: 100% !important;
+            text-align: center !important;
+        }
+        .cus_construction_menu {
+            font-size: 20px !important;
+        }
+        .cus_contact_navigation {
+            font-size: 16px !important;
+            margin-top: -242px;
+        }
+        .company_profile_box {
+            display: none !important;
+        }
+        .my_home_text_sub {
+            font-size: 26px !important;
+        }
+        .my_home_text_sub div {
+            font-size: 26px !important;
+            margin-top: 8px !important;
+        }
+        .cus_about_mobile {
+            height: 200px !important;
+        }
+        .main_cus_the_board_of_directior {
+            padding-bottom: 30px !important;
+        }
+        .cus_first_video {
+            margin-top: 0px !important;
+            height: 300px !important;
+        }
+        .cus_second_video {
+            margin-top: 0px !important;
+            height: 300px !important;
+        }
+        #myVideoFirst {
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            height: 280px !important;
+        }
+        #myVideoSecond {
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            height: 280px !important;
+        }
+        .cus_journey {
+            margin-top: 0px !important;
+        }
+        .cus_journey_sub {
+            margin-top: -80px !important;
+            float: left;
+        }
+        .cus_journey_sub_container {
+            padding: 0px !important;
+        }
+        .cus_journey_sub_p {
+            font-size: 14px !important;
+        }
+        .cus_journey_sub_title {
+            font-size: 26px !important;
+            margin-top: -30px;
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_first {
+            height: auto !important;
+            margin-top: -150px !important;
+            padding-right: 0px !important;
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_3 {
+            height: auto !important;
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_3_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 40% !important;
+            padding: 6px 30px;
+        }
+        .h_grayscale_4 {
+            padding-bottom: 0px !important;
+            padding-right: 0px !important;
+        }
+        .h_grayscale_4_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 35% !important;
+            padding: 6px 30px;
+        }
+        .h_grayscale_5 {
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_6 {
+            height: auto !important;
+            padding-right: 0px !important;
+            width: 100% !important;
+        }
+        .h_grayscale_6_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 40% !important;
+            padding: 6px 30px;
+        }
+        .h_grayscale_7 {
+            height: auto !important;
+            padding-right: 0px !important;
+            width: 100% !important;
+        }
+        .h_grayscale_7_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 40% !important;
+            padding: 6px 30px;
+        }
+        .cus_main_image {
+            display: block !important;
+        }
+        .cus_main_video {
+            display: none !important;
+        }
+        .cus_main_image_sub {
+            position: absolute;
+            z-index: 111;
+            top: 50%;
+            left: 50%;
+            margin-top: -40px;
+            margin-left: -35px;
+        }
+        .cus_main_image_sub i {
+            font-size: 80px;
+            opacity: 0.7;
+        }
+        .cus_they_recommend_us {
+            width: 100%;
+            float: left !important;
+        }
+        .cus_they_recommend_us div img {
+            width: 100% !important;
+        }
+        .cus_they_recommend_us div div {
+            width: 100% !important;
+            text-align: center;
+            font-size: 16px !important;
+        }
+        .cus_they_recommend_us div div span {
+            font-size: 14px !important;
+        }
+        .cus_career_back {
+            height: 481px !important;
+        }
+        .cus_career_background {
+            height: 500px !important;
+        }
+        #footer {
+            margin-top: -4px !important;
+        }
+        .cus_footer_logo {
+            text-align: center !important;
+        }
+        .cus_footer_logo_list {
+            text-align: center !important;
+        }
+        .cus_a_contruction {
+            font-size: 16px !important;
+            text-align: center !important;
+        }
+        .cus_a_contruction_sub {
+            font-size: 13px !important;
+            margin-top: -30px !important;
+            text-align: center !important;
+        }
+        .cus_footer_copyright {
+            font-size: 16px !important;
+            text-align: center !important;
+            height: 70px !important;
+        }
+        .cus_a_contruction_con {
+            margin-top: 25px !important;
+        }
+        .single_page_nav {
+            margin-left: -20px !important;
+            margin-top: 30px !important;
+        }
+        .single_page_nav li {
+            text-align: center !important;
+        }
+        .main_cus_social_icon {
+            padding-left: 38% !important;
+        }
+        .cus_social_icon1 {
+            width: 15% !important;
+            float: left !important;
+            margin-right: 0px !important;
+        }
+        .cus_social_icon2 {
+            width: 17% !important;
+            float: left !important;
+            margin-right: 0px !important;
+        }
+        .cus_social_icon3 {
+            width: 15% !important;
+            float: left !important;
+            margin-right: 0px !important;
+        }
+        .main_slideshow3_thumbs {
+            margin-left: -2px;
+            ;
+        }
+        #slideshow3_thumbs {
+            margin-top: 15px !important;
+            margin-left: -9px !important;
+        }
+        #slideshow3_thumbs li {
+            width: 33.3% !important;
+            float: left !important;
+        }
+        #slideshow3_thumbs li a img {
+            height: 120px !important;
+        }
+    }
+
+    @media only screen and (max-width: 430px) {
+        .tbod {
+            width: 100% !important;
+            text-align: center !important;
+        }
+        .cus_construction_menu {
+            font-size: 12px !important;
+            margin-top: -330px !important;
+        }
+        .cus_contact_navigation {
+            font-size: 12px !important;
+            margin-top: -342px;
+            width: 100% !important;
+            text-align: center !important;
+        }
+        .cus_contact_navigation nav ul {
+            width: 100% !important;
+            text-align: center !important;
+        }
+        .cus_contact_navigation nav ul li {
+            text-align: center !important;
+        }
+        .cus_contact_menu {
+            font-size: 12px !important;
+            font-weight: bold !important;
+            width: 100% !important;
+            text-align: center !important;
+            margin-top: -30px !important;
+            margin-left: 0px !important;
+        }
+        .cus_contact_menu_sub {
+            margin-top: 5px !important;
+            font-size: 12px !important;
+            margin-top: -15px !important;
+        }
+        .company_profile_box {
+            display: none !important;
+        }
+        .my_home_text_sub {
+            font-size: 22px !important;
+            padding-left: 20px !important;
+        }
+        .my_home_text_sub div {
+            font-size: 22px !important;
+            margin-top: 8px !important;
+            padding-left: 0px !important;
+        }
+        .cus_first_video {
+            margin-top: 0px !important;
+            height: 300px !important;
+        }
+        .cus_second_video {
+            margin-top: px !important;
+            height: 300px !important;
+        }
+        #myVideoFirst {
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            height: 280px !important;
+        }
+        #myVideoSecond {
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            height: 280px !important;
+        }
+        .cus_journey {
+            margin-top: -10px !important;
+        }
+        .h_grayscale_first {
+            height: auto !important;
+            margin-top: -150px !important;
+            padding-right: 0px !important;
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_first_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 33% !important;
+            left: 33% !important;
+            padding: 6px 30px;
+        }
+        .h_grayscale_3 {
+            height: auto !important;
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_3_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 40% !important;
+            padding: 6px 30px;
+        }
+        .h_grayscale_4 {
+            padding-bottom: 0px !important;
+            padding-right: 0px !important;
+        }
+        .h_grayscale_4_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 27% !important;
+            padding: 6px 30px;
+        }
+        .h_grayscale_5 {
+            padding-bottom: 0px !important;
+        }
+        .h_grayscale_5_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 37% !important;
+            padding: 6px 30px;
+        }
+        .h_grayscale_6 {
+            height: auto !important;
+            padding-right: 0px !important;
+            width: 100% !important;
+        }
+        .h_grayscale_6_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 35% !important;
+            padding: 6px 30px;
+        }
+        .h_grayscale_7 {
+            height: auto !important;
+            padding-right: 0px !important;
+            width: 100% !important;
+        }
+        .h_grayscale_7_btn {
+            cursor: pointer;
+            background: #FFF;
+            color: #3f62af;
+            position: absolute;
+            top: 50%;
+            left: 40% !important;
+            padding: 6px 30px;
+        }
+        .cus_main_image {
+            display: block !important;
+        }
+        .cus_main_video {
+            display: none !important;
+        }
+        .cus_main_image_sub {
+            position: absolute;
+            z-index: 111;
+            top: 50%;
+            left: 50%;
+            margin-top: -35px;
+            margin-left: -30px;
+        }
+        .cus_main_image_sub i {
+            font-size: 70px;
+            opacity: 0.7;
+        }
+        .cus_they_recommend_us {
+            width: 100%;
+            float: left !important;
+        }
+        .cus_they_recommend_us div img {
+            width: 100% !important;
+        }
+        .cus_they_recommend_us div div {
+            width: 100% !important;
+            text-align: center;
+            font-size: 16px !important;
+        }
+        .cus_they_recommend_us div div span {
+            font-size: 14px !important;
+        }
+        .cus_career_back {
+            height: 481px !important;
+        }
+        .cus_career_background {
+            height: 500px !important;
+        }
+        #footer {
+            margin-top: -61px !important;
+        }
+        .cus_footer_logo {
+            text-align: center !important;
+        }
+        .cus_footer_logo_list {
+            text-align: center !important;
+        }
+        .cus_a_contruction {
+            font-size: 16px !important;
+            text-align: center !important;
+        }
+        .cus_a_contruction_sub {
+            font-size: 13px !important;
+            margin-top: -30px !important;
+            text-align: center !important;
+        }
+        .cus_footer_copyright {
+            font-size: 16px !important;
+            text-align: center !important;
+            height: 70px !important;
+        }
+        .cus_a_contruction_con {
+            margin-top: 25px !important;
+        }
+        .single_page_nav {
+            margin-left: -20px !important;
+            margin-top: 30px !important;
+        }
+        .single_page_nav li {
+            text-align: center !important;
+        }
+        .main_cus_social_icon {
+            padding-left: 37% !important;
+        }
+        .cus_social_icon1 {
+            width: 15% !important;
+            float: left !important;
+            margin-right: 0px !important;
+        }
+        .cus_social_icon2 {
+            width: 19% !important;
+            float: left !important;
+            margin-right: 0px !important;
+        }
+        .cus_social_icon3 {
+            width: 15% !important;
+            float: left !important;
+            margin-right: 0px !important;
+        }
+        .main_slideshow3_thumbs {
+            margin-left: -2px;
+            ;
+        }
+        #slideshow3_thumbs {
+            margin-top: 15px !important;
+            margin-left: -9px !important;
+        }
+        #slideshow3_thumbs li {
+            width: 33.3% !important;
+            float: left !important;
+        }
+        #slideshow3_thumbs li a img {
+            height: 100px !important;
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        .background-bg-video {
+            width: 102% !important;
+        }
+    }

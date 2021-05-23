@@ -16,7 +16,7 @@ class RecommendController extends Controller
     public function index()
     {
         //
-        $model = Recommend::get();
+        $model = Recommend::orderby("order")->get();
         $data = array(
             'recommends' => $model,
         );

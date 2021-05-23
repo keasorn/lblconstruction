@@ -16,7 +16,7 @@ class TeamController extends Controller
     public function index()
     {
         //
-        $model = Team::get();
+        $model = Team::orderby("order")->get();
         $data = array(
             'teams' => $model,
         );

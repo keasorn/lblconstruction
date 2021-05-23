@@ -47,9 +47,18 @@
                         <li class="{{ (request()->is('*team*')) ? 'active' : '' }}">
                             <a href="/admin/team">Team Section</a>
                         </li>
-{{--                        <li class="{{ (request()->is('*design_build*')) ? 'active' : '' }}">--}}
-{{--                            <a href="/admin/design_build">Design and Build Section</a>--}}
-{{--                        </li>--}}
+                        <li class="{{ (request()->is('*award*')) ? 'active' : '' }}">
+                            <a href="/admin/award">Award Section</a>
+                        </li>
+                        <li class="{{ (request()->is('*career*')) ? 'active' : '' }}">
+                            <a href="/admin/career">Career Section</a>
+                        </li>
+                        <li class="{{ (request()->is('*design_build*')) ? 'active' : '' }}">
+                            <a href="/admin/design_build">Design and Build Section</a>
+                        </li>
+                        <li class="{{ (request()->is('*project*')) ? 'active' : '' }}">
+                            <a href="/admin/project">Project Section</a>
+                        </li>
                         <li class="{{ (request()->is('*recommend*')) ? 'active' : '' }}">
                             <a href="/admin/recommend">Recommend Company Section</a>
                         </li>
@@ -62,13 +71,13 @@
                     </a>
                     <ul class="ml-menu">
                         <li class="{{ (request()->is('*recommend*')) ? 'active' : '' }}">
-                            <a href="/admin/web_label" class="menu-toggle">
+                            <a href="/admin/web_label">
                                 <i class="material-icons">title</i>
                                 <span>Website Info/label</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#none" class="menu-toggle">
+                            <a href="#none">
                                 <i class="material-icons">people</i>
                                 <span>User</span>
                             </a>

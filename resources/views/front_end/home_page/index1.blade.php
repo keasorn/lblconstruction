@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
     <title>LBL Construction</title>
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-    <link href="/http://fonts.googleapis.com/css?family=Raleway:400,800,700,300" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,800,700,300" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/css/bootstrap.css" />
     <link rel="stylesheet" href="/css/font-awesome.css" />
     <link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css" />
@@ -193,7 +193,7 @@
 
 <body class="front-page">
 <div class="company_profile_box">
-    <a href="/#">
+    <a href="#">
         <i class="fa fa-download" aria-hidden="true"></i> Company Profile
     </a>
 </div>
@@ -230,12 +230,12 @@
                     <div class="my_home_text_sub" style="color: #fff; font-size: 30px; font-weight:100; padding-left: 150px;">Read LBL'S Company Profile</div>
                     <div class="my_home_text_sub" style="padding-left: 150px;">
                         <div style="color: #fff; font-size: 30px; font-weight:100; float: left; margin-right: 20px;">And follow us on</div>
-                        <a href="/#" class="social_icon" style="float: left; margin-right: 15px;"><img src="images/Icon awesome-facebook-f.svg" /></a>
-                        <a href="/#" class="social_icon" style="float: left; margin-right: 15px;"><img src="images/Icon feather-instagram.svg" /></a>
-                        <a href="/#" class="social_icon" style="float: left;"><img src="images/Icon awesome-linkedin-in.svg" /></a>
+                        <a href="#" class="social_icon" style="float: left; margin-right: 15px;"><img src="images/Icon awesome-facebook-f.svg" /></a>
+                        <a href="#" class="social_icon" style="float: left; margin-right: 15px;"><img src="images/Icon feather-instagram.svg" /></a>
+                        <a href="#" class="social_icon" style="float: left;"><img src="images/Icon awesome-linkedin-in.svg" /></a>
                     </div>
                 </div>
-                <a class="go-to-about my-scroll" href="/#about-us" id="my_home_scroll"><i class="fa fa-angle-down"></i></a>
+                <a class="go-to-about my-scroll" href="#about-us" id="my_home_scroll"><i class="fa fa-angle-down"></i></a>
 
                 <!-- title-blogtop -->
                 <div class="col-xs-12 first-page" id="primary-banner-title">
@@ -278,13 +278,13 @@
                         <div class="subMenu nav cus_contact_navigation" id="navigation-menu">
                             <nav>
                                 <ul class="single-page-nav" style="list-style: none; text-align: right;">
-                                    <li><a href="/#primary-banner" style="color: #fff !important; font-weight:300;">Home</a></li>
-                                    <li><a href="/#about-us" style="color: #fff !important; font-weight:300;">About Us</a></li>
-                                    <li><a href="/#design-build" style="color: #fff !important; font-weight:300;">Design &amp; Build</a></li>
-                                    <li><a href="/#projects" style="color: #fff !important; font-weight:300;">Projects</a></li>
-                                    <li><a href="/#they-recommend-us" style="color: #fff !important; font-weight:300;">They Recommend Us</a></li>
-                                    <li><a href="/#careers" style="color: #fff !important; font-weight:300;">Careers</a></li>
-                                    <li><a href="/#footer" style="color: #fff !important; font-weight:300;">Awards &amp; Media</a></li>
+                                    <li><a href="#primary-banner" style="color: #fff !important; font-weight:300;">Home</a></li>
+                                    <li><a href="#about-us" style="color: #fff !important; font-weight:300;">About Us</a></li>
+                                    <li><a href="#design-build" style="color: #fff !important; font-weight:300;">Design &amp; Build</a></li>
+                                    <li><a href="#projects" style="color: #fff !important; font-weight:300;">Projects</a></li>
+                                    <li><a href="#they-recommend-us" style="color: #fff !important; font-weight:300;">They Recommend Us</a></li>
+                                    <li><a href="#careers" style="color: #fff !important; font-weight:300;">Careers</a></li>
+                                    <li><a href="#footer" style="color: #fff !important; font-weight:300;">Awards &amp; Media</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -942,7 +942,7 @@
             </div>
             <div class="row" style="padding:100px 0px;">
                 <div class="col-xs-12">
-                    <a class="go-up" href="/#wrapper">
+                    <a class="go-up" href="#wrapper">
                         <img src="images/Icon material-keyboard-arrow-up.svg" />
                         <br /><br /> BACK TO TOP
                     </a>
@@ -963,13 +963,13 @@
                     <div class="subMenu nav" id="navigation-menu">
                         <nav>
                             <ul class="single-page-nav single_page_nav" style="list-style: none; text-align: right;">
-                                <li><a href="/#primary-banner" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">Home</a></li>
-                                <li><a href="/#about-us" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">About Us</a></li>
-                                <li><a href="/#design-build" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">Design &amp; Build</a></li>
-                                <li><a href="/#projects" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">Projects</a></li>
-                                <li><a href="/#they-recommend-us" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">They Recommend Us</a></li>
-                                <li><a href="/#careers" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">Careers</a></li>
-                                <li><a href="/#awards-media" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">Awards &amp; Media</a></li>
+                                <li><a href="#primary-banner" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">Home</a></li>
+                                <li><a href="#about-us" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">About Us</a></li>
+                                <li><a href="#design-build" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">Design &amp; Build</a></li>
+                                <li><a href="#projects" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">Projects</a></li>
+                                <li><a href="#they-recommend-us" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">They Recommend Us</a></li>
+                                <li><a href="#careers" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">Careers</a></li>
+                                <li><a href="#awards-media" class="cus_a_contruction" style="color: #3f62af !important;font-weight:300; font-size:25px;">Awards &amp; Media</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -981,9 +981,9 @@
                     <span class="corp cus_footer_copyright">Copyrights &copy; 2020 LBL International - All rights reserved</span>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 main_cus_social_icon" style="color:#3f62af; text-align:left;">
-                    <a href="/#" class="social_icon cus_social_icon1" style="float: left; margin-right: 30px;"><img src="images/Icon awesome-facebook-f.svg" /></a>
-                    <a href="/#" class="social_icon cus_social_icon2" style="float: left; margin-right: 30px;"><img src="images/Icon feather-instagram.svg" /></a>
-                    <a href="/#" class="social_icon cus_social_icon3" style="float: left;"><img src="images/Icon awesome-linkedin-in.svg" /></a>
+                    <a href="#" class="social_icon cus_social_icon1" style="float: left; margin-right: 30px;"><img src="images/Icon awesome-facebook-f.svg" /></a>
+                    <a href="#" class="social_icon cus_social_icon2" style="float: left; margin-right: 30px;"><img src="images/Icon feather-instagram.svg" /></a>
+                    <a href="#" class="social_icon cus_social_icon3" style="float: left;"><img src="images/Icon awesome-linkedin-in.svg" /></a>
                 </div>
             </div>
         </div>
@@ -1095,22 +1095,22 @@
                     <div class="col-md-3 col-sm-3 col-xs-12 text-center main_slideshow3_thumbs">
                         <ul id="slideshow3_thumbs" class="desoslide-thumbs-vertical list-inline">
                             <li>
-                                <a href="/images/p1.png">
+                                <a href="images/p1.png">
                                     <img src="images/p1.png" style="display: block;padding:5px;width:100%;height: 200px;object-fit: cover;">
                                 </a>
                             </li>
                             <li>
-                                <a href="/images/p2.png">
+                                <a href="images/p2.png">
                                     <img src="images/p2.png" style="display: block;padding:5px;width:100%;height: 200px;object-fit: cover;">
                                 </a>
                             </li>
                             <li>
-                                <a href="/images/p3.png">
+                                <a href="images/p3.png">
                                     <img src="images/p3.png" style="display: block;padding:5px;width:100%;height: 200px;object-fit: cover;">
                                 </a>
                             </li>
                             <li>
-                                <a href="/images/p4.png">
+                                <a href="images/p4.png">
                                     <img src="images/p4.png" style="display: block;padding:5px;width:100%;height: 200px;object-fit: cover;">
                                 </a>
                             </li>
@@ -1144,36 +1144,36 @@
     </div>
 </div>
 
-<script src="js/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery-1.11.2.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap-tabcollapse.js"></script>
-<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-<script src="js/jquery.touchwipe.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/responsiveslides.js"></script>
-<script src="js/small-icons.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/fancybox/source/jquery.fancybox.js"></script>
-<script src="js/easy-circle-skill.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/bootstrap-tabcollapse.js"></script>
+<script src="/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="/js/jquery.touchwipe.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/responsiveslides.js"></script>
+<script src="/js/small-icons.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.appear.js"></script>
+<script src="/js/fancybox/source/jquery.fancybox.js"></script>
+<script src="/js/easy-circle-skill.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 <script src="https://www.google.com/jsapi"></script>
-<script src="js/TweenMax.min.js"></script>
-<script src="js/ScrollToPlugin.min.js"></script>
-<script src="js/getshar-0.8.0.min.js"></script>
-<script src="js/3d-pie-google.js"></script>
-<script src="js/jquery.jqplot.min.js"></script>
-<script src="js/jqplot.donutRenderer.min.js"></script>
-<script src="js/morris.js"></script>
-<script src="js/dzsparallaxer.js"></script>
-<script src="js/jquery.mCustomScrollbar.js"></script>
-<script src="js/main.js"></script>
+<script src="/js/TweenMax.min.js"></script>
+<script src="/js/ScrollToPlugin.min.js"></script>
+<script src="/js/getshar-0.8.0.min.js"></script>
+<script src="/js/3d-pie-google.js"></script>
+<script src="/js/jquery.jqplot.min.js"></script>
+<script src="/js/jqplot.donutRenderer.min.js"></script>
+<script src="/js/morris.js"></script>
+<script src="/js/dzsparallaxer.js"></script>
+<script src="/js/jquery.mCustomScrollbar.js"></script>
+<script src="/js/main.js"></script>
 
-<script src="js/desoslide/vendor/highlight/highlight.pack.js"></script>
-<script src="js/desoslide/app/demo.js"></script>
-<script src="js/desoslide/jquery.desoslide.min.js"></script>
+<script src="/js/desoslide/vendor/highlight/highlight.pack.js"></script>
+<script src="/js/desoslide/app/demo.js"></script>
+<script src="/js/desoslide/jquery.desoslide.min.js"></script>
 
 <script type='text/javascript'>
     $(document).ready(function() {

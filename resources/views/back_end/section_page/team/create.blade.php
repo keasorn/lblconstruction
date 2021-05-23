@@ -62,8 +62,8 @@
                     <div class="row clearfix">
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-info right">
-                                <i class="material-icons">add</i>
-                                <span>Add new</span>
+                                <i class="material-icons">save</i>
+                                <span>Save</span>
                             </button>
                         </div>
 

@@ -28,8 +28,8 @@ use App\Http\Controllers\MyUtility as MyUt;
                             <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Logo</th>
-                                <th>Company Name</th>
+                                <th>Image</th>
+                                <th>Title</th>
                                 <th>Description</th>
                                 <th>Order</th>
                             </tr>
