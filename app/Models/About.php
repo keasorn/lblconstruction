@@ -13,6 +13,7 @@ class About extends Model
         'background',
         'discover',
         'cover',
+        'over_cover',
         'description',
         'created_by',
     ];

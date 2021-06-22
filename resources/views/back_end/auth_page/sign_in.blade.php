@@ -22,7 +22,7 @@
     <link href="/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/admin_style.css" rel="stylesheet">
 </head>
 
 <body class="login-page">

@@ -18,6 +18,7 @@ class CreateAwardsTable extends Migration
             $table->string("title");
             $table->string("description");
             $table->string("logo");
+            $table->integer("award_type");
             $table->integer("order");
             $table->bigInteger("created_by")->unsigned();
             $table->foreign('created_by')->references('id')->on('users');

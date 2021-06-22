@@ -42,14 +42,14 @@ class SectionPageController extends Controller
 
     public function companyProfile(Request $request)
     {
-        $path = $this->uploadImg($request, "company_profile", "uploading/files", "company_profile");
+        $path = $this->uploadImg($request, "company_profile", "uploading/pdf", "");
         $data = array(
             "title" => "company_profile",
             "description" => "",
             "file" => $path,
             "created_by" => 1,
         );
-        $this->firstOrNewBySection($data, "companyProfile");
+        $this->firstOrNewBySection($data, "company_profile");
         return redirect()->back();
     }
 
@@ -105,11 +105,14 @@ class SectionPageController extends Controller
         $background = $this->uploadImg($request, "background", "uploading/files", "background");
         $discover = $this->uploadImg($request, "discover", "uploading/files", "discover");
         $cover = $this->uploadImg($request, "cover", "uploading/files", "cover");
+        $over_cover = $this->uploadImg($request, "over_cover", "uploading/files", "over_cover");
+
         $data = $request->except("_token");
 
         if ($request->background) $data["background"] = $background;
         if ($request->discover) $data["discover"] = $discover;
         if ($request->cover) $data["cover"] = $cover;
+        if ($request->over_cover) $data["over_cover"] = $over_cover;
         $data["created_by"] = Auth::id();
         $model = About::find(1);
         $model->update($data);

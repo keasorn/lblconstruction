@@ -25,7 +25,7 @@ use App\Http\Controllers\MyUtility as MyUt;
                         @csrf
 
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <h4>Background Image</h4>
                                 <div class="form-group">
                                     <input type="file" name="background" class="bg-gray-50"
@@ -33,7 +33,7 @@ use App\Http\Controllers\MyUtility as MyUt;
                                     <img src="{{$data->background}}" height="100" id="background_id">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <h5>Discover</h5>
                                 <div class="form-group">
                                     <input type="file" name="discover" class="form-control bg-gray-50"
@@ -43,12 +43,20 @@ use App\Http\Controllers\MyUtility as MyUt;
 
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <h5>Cover</h5>
                                 <div class="form-group">
                                     <input type="file" name="cover" class="bg-gray-50"
                                            multiple="" accept="image/*" onchange="readURL(this,'cover_id');">
                                     <img src="{{$data->cover}}" height="100" id="cover_id">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Over Cover</h5>
+                                <div class="form-group">
+                                    <input type="file" name="over_cover" class="bg-gray-50"
+                                           multiple="" accept="image/*" onchange="readURL(this,'over_cover_id');">
+                                    <img src="{{$data->over_cover}}" height="100" id="over_cover_id">
                                 </div>
                             </div>
                             <div class="col-md-12">

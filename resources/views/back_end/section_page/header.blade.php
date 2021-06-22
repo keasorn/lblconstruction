@@ -54,6 +54,13 @@ use App\Http\Controllers\MyUtility as MyUt;
                                     <img src="{{$data->background_mobile}}" height="180" id="phone_id">
                                 </div>
                             </div>
+                            <div class="col-md-12">
+                                <h4>Display on page</h4>
+                                <select name="display_title" class="" id="">
+                                    <option value="0" {{$data->display_title==0?"selected":""}}>Hide</option>
+                                    <option value="1" {{$data->display_title==1?"selected":""}}>Show</option>
+                                </select>
+                            </div>
                             <div class="col-md-6">
                                 <h4>Title</h4>
                                 <input type="text" name="title" class="form-control" value="{{$data->title}}">

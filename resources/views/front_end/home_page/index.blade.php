@@ -6,14 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="format-detection" content="telephone=no"/>
-    <title>LBL Construction</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,800,700,300" rel="stylesheet" type="text/css"/>
+    <title> LBL Construction</title>
+    <link rel="shortcut icon" href="{{$header->logo}}" type="image/x-icon"/>
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/font-awesome.css"/>
     <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css"/>
     <link rel="stylesheet" href="css/dzsparallaxer.css"/>
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+
+    <!-- add these link link on head --->
+
+    <script src="/js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="/ajax/libs/slick-carousel/slick.min.css">
+    <link rel="stylesheet" href="/ajax/libs/slick-carousel/slick-theme.min.css">
+    <script src="/ajax/libs/slick-carousel/slick.min.js"></script>
+    <!---- for icon style------>
+    <link href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/lightslider.css"/>
     <link rel="stylesheet" href="css/my_style.css"/>
     <link rel="stylesheet" href="css/my_custom.css"/>
 
@@ -27,181 +38,111 @@
     <link rel="stylesheet" href="css/desoslide/vendor/animate/animate.min.css">
     <link rel="stylesheet" href="css/desoslide/jquery.desoslide.css">
 
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-27524593-3', 'sylouuu.github.io');
-        ga('send', 'pageview');
-    </script>
+    {{--    <link rel="stylesheet" href="css/so_styles.css"/>--}}
+    <link rel="stylesheet" href="css/aos.css"/>
 
-    <style type="text/css">
-        @font-face {
-            font-family: Montserrat;
-            src: url(fonts/Montserrat/Montserrat-Regular.ttf);
-        }
 
-        body {
-            font-family: 'Montserrat' !important;
-        }
-
-        .darken-pseudo {
-            position: relative;
-        }
-
-        .darken-pseudo:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: block;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-
-        .social_icon:hover {
-            color: #fff;
-        }
-
-        .menu_button {
-            position: absolute;
-            z-index: 1000;
-            right: 70px;
-            top: 50px;
-            cursor: pointer;
-        }
-
-        .bar1,
-        .bar2,
-        .bar3 {
-            width: 35px;
-            height: 5px;
-            background-color: #fff;
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-
-        .change .bar1 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
-        }
-
-        .change .bar2 {
-            opacity: 0;
-        }
-
-        .change .bar3 {
-            -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px);
-        }
-    </style>
-    <style type="text/css">
-        .responsiveRapper {
-            overflow: hidden;
-            padding-bottom: 56.25%;
-            padding-top: 30px;
-            height: 0;
-            position: relative;
-        }
-
-        .responsiveRapper iframe,
-        .responsiveRapper object,
-        .responsiveRapper embed {
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
-
-        /* width */
-
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        /* Track */
-
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        /* Handle */
-
-        ::-webkit-scrollbar-thumb {
-            background: #888;
-        }
-
-        /* Handle on hover */
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-
-        /*-----------------*/
-        /* width */
-
-        .scroll_1::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        /* Track */
-
-        .scroll_1::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        /* Handle */
-
-        .scroll_1::-webkit-scrollbar-thumb {
-            background: #30487c;
-        }
-
-        /* Handle on hover */
-
-        .scroll_1::-webkit-scrollbar-thumb:hover {
-            background: #4165b0;
-        }
-
-        /*-----------------*/
-        /* width */
-
-        .scroll_2::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        /* Track */
-
-        .scroll_2::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        /* Handle */
-
-        .scroll_2::-webkit-scrollbar-thumb {
-            background: #dddddd;
-        }
-
-        /* Handle on hover */
-
-        .scroll_2::-webkit-scrollbar-thumb:hover {
-            background: #aaaaaa;
-        }
-
-        /*-----------------*/
-    </style>
-    </style>
 </head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    ul {
+        list-style: none outside none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .demo .item {
+        margin-bottom: 60px;
+    }
+
+    .content-slider li {
+        background-color: #ed3020;
+        text-align: center;
+        color: #FFF;
+    }
+
+    .content-slider h3 {
+        margin: 0;
+        padding: 70px 0;
+    }
+
+    .demo {
+        width: 800px;
+    }
+</style>
+
+<style>
+    .color-blue {
+        background-image: url('/images/logo-blue.png');
+    }
+
+    .color-blue:hover {
+        background-image: url('/images/logo-blue-over.png');
+    }
+
+    .color-white, .color-undefined {
+        background-image: url('/images/logo-w.png');
+    }
+
+    .color-white:hover, .color-undefined:hover {
+        background-image: url('/images/logo-w-over.png');
+    }
+
+</style>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-27524593-3', 'sylouuu.github.io');
+    ga('send', 'pageview');
+</script>
+
+
+<script>
+    $(window).scroll(function () {
+        // selectors
+        var $window = $(window),
+            $body = $('.logo-fixed'),
+            $panel = $('section');
+
+        // Change 33% earlier than scroll position so colour is there when you arrive.
+        var scroll = $window.scrollTop() + ($window.height() / 8);
+
+        $panel.each(function () {
+            var $this = $(this);
+            // alert($this);
+            // if position is within range of this panel.
+            // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+            // Remember we set the scroll to 33% earlier in scroll var.
+            if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+                // Remove all classes on body with color-
+                $body.removeClass(function (index, css) {
+                    return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
+                });
+
+                // Add class of currently active div
+                $body.addClass('color-' + $(this).data('color'));
+            }
+        });
+
+    }).scroll();
+</script>
+
 <?php
 function compress($source)
 {
@@ -228,85 +169,169 @@ function compress($source)
 
 ?>
 <body class="front-page">
+
+<body class="front-page">
+
 <div class="company_profile_box">
-    <a href="#">
+    <a href="{{$profileCompany}}" target="_blank">
         <i class="fa fa-download" aria-hidden="true"></i> Company Profile
     </a>
 </div>
-<div class="preloader page-preloader">
-    <div class="preload-img"></div>
-</div>
+{{--<div class="preloader page-preloader">--}}
+{{--    <div class="preload-img"></div>--}}
+{{--</div>--}}
 
 <!-- WRAPPER HEADER -->
 <div id="nav-anchor"></div>
 
-{{--@include("front_end.home_page.primary_header")--}}
-{{--@include("front_end.home_page.about_us")--}}
-{{--@include("front_end.home_page.design_and_build")--}}
-@include("front_end.home_page.project")
-{{--@include("front_end.home_page.recommend")--}}
-{{--@include("front_end.home_page.careers")--}}
-{{--@include("front_end.home_page.footer")--}}
+<div class="container-fluid position-right" id="wrapper">
+    <div class="home" id="home"></div>
+
+    <div class="menu_button menu-fixed" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    @include("front_end.home_page.primary_header")
+    @include("front_end.home_page.about_us")
+    @include("front_end.home_page.design_and_build")
+    @include("front_end.home_page.project")
+    @include("front_end.home_page.recommend")
+    @include("front_end.home_page.board_director")
+    @include("front_end.home_page.award")
+    @include("front_end.home_page.careers")
+    @include("front_end.home_page.footer")
 
 
-<script src="js/jquery-1.11.2.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap-tabcollapse.js"></script>
-<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-<script src="js/jquery.touchwipe.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/responsiveslides.js"></script>
-<script src="js/small-icons.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/fancybox/source/jquery.fancybox.js"></script>
-<script src="js/easy-circle-skill.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-<script src="https://www.google.com/jsapi"></script>
-<script src="js/TweenMax.min.js"></script>
-<script src="js/ScrollToPlugin.min.js"></script>
-<script src="js/getshar-0.8.0.min.js"></script>
-<script src="js/3d-pie-google.js"></script>
-<script src="js/jquery.jqplot.min.js"></script>
-<script src="js/jqplot.donutRenderer.min.js"></script>
-<script src="js/morris.js"></script>
-<script src="js/dzsparallaxer.js"></script>
-<script src="js/jquery.mCustomScrollbar.js"></script>
-<script src="js/main.js"></script>
 
-<script src="js/desoslide/vendor/highlight/highlight.pack.js"></script>
-<script src="js/desoslide/app/demo.js"></script>
-<script src="js/desoslide/jquery.desoslide.min.js"></script>
+    {{--    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>--}}
+    <script src="js/bootstrap.js"></script>
+    {{--    <script src="js/bootstrap-tabcollapse.js"></script>--}}
+    {{--    <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>--}}
+    {{--    <script src="js/jquery.touchwipe.min.js"></script>--}}
+    {{--    <script src="js/isotope.pkgd.min.js"></script>--}}
+    {{--    <script src="js/imagesloaded.pkgd.min.js"></script>--}}
+    {{--    <script src="js/responsiveslides.js"></script>--}}
+    {{--    <script src="js/small-icons.js"></script>--}}
+    {{--    <script src="js/jquery.easing.1.3.js"></script>--}}
+    {{--    <script src="js/jquery.appear.js"></script>--}}
+    {{--    <script src="js/fancybox/source/jquery.fancybox.js"></script>--}}
+    {{--    <script src="js/easy-circle-skill.js"></script>--}}
+    {{--    <script src="js/TweenMax.min.js"></script>--}}
+    {{--    <script src="js/ScrollToPlugin.min.js"></script>--}}
+    {{--    <script src="js/getshar-0.8.0.min.js"></script>--}}
+    {{--    <script src="js/3d-pie-google.js"></script>--}}
+    {{--    <script src="js/jquery.jqplot.min.js"></script>--}}
+    {{--    <script src="js/jqplot.donutRenderer.min.js"></script>--}}
+    {{--    <script src="js/morris.js"></script>--}}
+    {{--    <script src="js/dzsparallaxer.js"></script>--}}
+    {{--    <script src="js/jquery.mCustomScrollbar.js"></script>--}}
+    {{--    <script src="js/main.js"></script>--}}
+    <script src="/js/lightslider.js"></script>
 
-<script type='text/javascript'>
-    $(document).ready(function () {
-        $('.a').hover(function () {
+    <script src="js/desoslide/vendor/highlight/highlight.pack.js"></script>
+    <script src="js/desoslide/app/demo.js"></script>
+    <script src="js/desoslide/jquery.desoslide.min.js"></script>
 
-            $('.b').fadeIn('fast');
-            $('.a').fadeOut('slow');
+    <script src="js/aos.js"></script>
+    <script src="js/my_script.js"></script>
 
-        }, function () {
-            $('.b').fadeOut('fast');
-            $('.a').fadeIn('fast');
+    <script>
+        $(document).ready(function () {
+            $('#image-gallery1').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 9,
+                slideMargin: 0,
+                speed: 500,
+                auto: false,
+                loop: false,
+                onSliderLoad: function () {
+                    $('#image-gallery1').removeClass('cS-hidden');
+                }
+            });
+            $('#image-gallery2').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 9,
+                slideMargin: 0,
+                speed: 500,
+                auto: false,
+                loop: false,
+                onSliderLoad: function () {
+                    $('#image-gallery2').removeClass('cS-hidden');
+                }
+            });
+            $('#image-gallery3').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 9,
+                slideMargin: 0,
+                speed: 500,
+                auto: false,
+                loop: false,
+                onSliderLoad: function () {
+                    $('#image-gallery3').removeClass('cS-hidden');
+                }
+            });
+            $('#image-gallery4').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 9,
+                slideMargin: 0,
+                speed: 500,
+                auto: false,
+                loop: false,
+                onSliderLoad: function () {
+                    $('#image-gallery4').removeClass('cS-hidden');
+                }
+            });
+            $('#image-gallery5').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 9,
+                slideMargin: 0,
+                speed: 500,
+                auto: false,
+                loop: false,
+                onSliderLoad: function () {
+                    $('#image-gallery5').removeClass('cS-hidden');
+                }
+            });
+            $('#image-gallery6').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 9,
+                slideMargin: 0,
+                speed: 500,
+                auto: false,
+                loop: false,
+                onSliderLoad: function () {
+                    $('#image-gallery6').removeClass('cS-hidden');
+                }
+            });
+            $('#image-gallery7').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 9,
+                slideMargin: 0,
+                speed: 500,
+                auto: false,
+                loop: false,
+                onSliderLoad: function () {
+                    $('#image-gallery7').removeClass('cS-hidden');
+                }
+            });
         });
-    });
+        $(".viewGallery").click(function () {
+            $(window).resize();
+            $(window).resize();
 
-    $(document).ready(function () {
-        $('.image-frame').hover(function () {
-            $('.image-caption', this).slideToggle('slow');
-            $(this).find('img').toggleClass('j_show j_hide');
-        }, function () {
-            $('.image-caption', this).slideToggle('slow');
-            $(this).find('img').toggleClass('j_show j_hide');
         });
-
-        $('.project_box').hover(function () {
-            $(this).find('img').toggleClass('h_grayscale f_grayscale');
-        });
-    });
-</script>
+    </script>
+</div>
+</body>
 </body>
 
 </html>

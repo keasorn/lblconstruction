@@ -12,6 +12,7 @@ class Award extends Model
         'title',
         'description',
         'logo',
+        'award_type',
         'order',
         'created_by',
     ];

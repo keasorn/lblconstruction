@@ -1,56 +1,52 @@
 <!-- They Recommend Us -->
 <div style="clear:both"></div>
 
-<section id="careers">
+<section id="careers" data-color="white">
     <div class="container-fluid">
         <div class="clearfix"></div>
-        <div class="background cus_career_background">
-            <div class="layer" style="background: url(images/careers.png);"></div>
+        <div class="background cus_career_background ">
+            <div class="layer fix-bg-image" style="background: url(images/careers.png); background-size: cover; "></div>
             <div class="layer cus_career_back" style="background: rgb(0 44 88 / 80%);"></div>
         </div>
 
         <div class="container">
 
             <div class="row">
-                <div class="col-xs-12" style="text-align:center; padding: 60px 0px 60px 0px;">
-                    <div style="font-size: 40px; font-weight: 100; color: #FFF;">You can work for us</div>
+                <div class="col-xs-12" style="text-align:center; padding: 60px 0px 100px 0px;">
+                    <div style="font-size: 34px; font-weight: 100; color: #FFF;">You can work for us</div>
                 </div>
+                <!-- section start here-->
+                <section class="sec1">
+                    <div class="container">
+                        <div class="row">
 
-                <div class="col-sx-12">
-                    <div class="clearfix"></div>
 
-                    <div class="wrapper-carusel carusel-4">
-                        <div class="row list-carousel responsive slider-foo-4">
-                            <div class="preloader">
-                                <div class="preload-img"></div>
-                            </div>
-                            <div class="carousel-box foo4" data-item-max="4">
-                                @foreach($careers as $row)
-                                    <div class="col-xs-12 col-sm-3 col-md-3 cus_ycwfus">
-                                        <div>{{$row->position}}</div>
-                                        <div style="font-weight:100; margin-top:20px;">
+                        </div>
+                        <div class="row slide1">
+                            @foreach($careers as $row)
+                                <div class="col-md-3">
+
+                                    <div class="text-box text-center">
+                                        <div class="text-white text-left">{{$row->position}}</div>
+                                        <div style="font-weight:100; margin-top:20px;" class="text-white text-left">
                                             {{$row->location}}<br/> {{$row->schedule}}
                                             <br/> {{\App\Http\Controllers\MyUtility::countDate($row->date_post)}}
                                         </div>
                                     </div>
-                                @endforeach
-                            </div>
-                        </div>
-                        <button class="prev"><i class="fa fa-angle-left"></i></button>
-                        <button class="next"><i class="fa fa-angle-right"></i></button>
-
-
-                    </div>
-                    <!-- /carusel-4 -->
-                    <center>
-                        <button type="submit" class="btn-default"
-                                style="padding: 3px 40px 0 40px;margin-top:50px;margin-bottom:90px" data-toggle="modal"
-                                data-target="#popupCareer">
-                            More
-                        </button>
-                    </center>
-
-                </div>
+                                </div>
+                        @endforeach
+                        <!--end col-md-3-->
+                        </div><!-- end row-->
+                        <!-- /carusel-4 -->
+                        <center>
+                            <button type="submit" class="btn-default"
+                                    style="padding: 3px 40px 0 40px;margin-top:50px;margin-bottom:90px" data-toggle="modal"
+                                    data-target="#popupCareer">
+                                More
+                            </button>
+                        </center>
+                    </div><!-- end container-->
+                </section>
 
             </div>
         </div>

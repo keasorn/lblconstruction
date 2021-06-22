@@ -9,6 +9,7 @@ class Header extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'display_title',
         'title',
         'description',
         'facebook',

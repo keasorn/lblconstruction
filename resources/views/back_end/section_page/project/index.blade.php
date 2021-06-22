@@ -33,7 +33,7 @@ use App\Http\Controllers\MyUtility as MyUt;
                                 {{$row->title}}
                                 <br>
                                 <img src="{{$row->image}}" width="100" alt="No Image selected">
-                                <span class="badge bg-cyan">99 Photos <a
+                                <span class="badge bg-cyan">{{\App\Models\ProjectImage::where("project",$row->id)->count()}} Photos <a
                                             href="/admin/project/{{$row->id}}/image"
                                             class="btn btn-xs bg-blue align-right"><i
                                                 class="material-icons">add</i></a></span>

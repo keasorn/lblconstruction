@@ -5,7 +5,8 @@
             <a href="#none" class="navbar-toggle collapsed" data-toggle="collapse"
                data-target="#navbar-collapse" aria-expanded="false"></a>
             <a href="#none" class="bars"></a>
-            <a class="navbar-brand" target="_blank" href="/index.html">LBL Admin</a>
+            <a class="navbar-brand" target="_blank" href="/index.html">
+                LBL Admin Page</a>
         </div>
     </div>
 </nav>

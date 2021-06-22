@@ -15,6 +15,7 @@ class CreateHeadersTable extends Migration
     {
         Schema::create('headers', function (Blueprint $table) {
             $table->id();
+            $table->integer("display_title");
             $table->string("title");
             $table->string("description");
             $table->string("facebook");

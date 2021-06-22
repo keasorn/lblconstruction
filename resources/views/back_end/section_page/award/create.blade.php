@@ -16,7 +16,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            award Form
+                            Award and Media Page
                         </h2>
                     </div>
                     <div class="body">
@@ -45,6 +45,20 @@
                                     <img src="/images/image.png" height="100" id="logo_id" class="bg-grey">
                                 </div>
 
+                            </div>
+                            <div class="col-md-3">
+                                <b>Type</b>
+                                <div class="input-group colorpicker">
+                                    <div class="form-line">
+                                        <select name="award_type" class="form-control" id="">
+                                            <option value="0">Award</option>
+                                            <option value="1">Media</option>
+                                        </select>
+                                    </div>
+                                    <span class="input-group-addon">
+                                            <i></i>
+                                        </span>
+                                </div>
                             </div>
                             <div class="col-md-3">
                                 <b>Order</b>

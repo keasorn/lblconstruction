@@ -17,7 +17,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            award Edit form
+                            Award and Media Page
                         </h2>
                     </div>
                     <div class="body">
@@ -53,9 +53,23 @@
                                 </div>
 
                             </div>
+                            <div class="col-md-3">
+                                <b>Type</b>
+                                <div class="input-group colorpicker">
+                                    <div class="form-line">
+                                        <select name="award_type" class="form-control" id="">
+                                            <option value="0" {{$award->logo==0?"selected":""}}>Award</option>
+                                            <option value="1"  {{$award->logo==1?"selected":""}}>Media</option>
+                                        </select>
+                                    </div>
+                                    <span class="input-group-addon">
+                                            <i></i>
+                                        </span>
+                                </div>
+                            </div>
 
                             <div class="col-md-3">
-                                <b>award Order</b>
+                                <b>Order</b>
                                 <div class="input-group colorpicker">
                                     <div class="form-line">
                                         <input type="number" max="100" min="0" class="form-control" value="{{$award->order}}" name="order" required>
@@ -86,3 +100,6 @@
     <div id="nouislider_range_example"></div>
     <!-- #END# Input Slider -->
 @endsection
+
+
+@include("back_end.task_mgt_page.embed_scrip")

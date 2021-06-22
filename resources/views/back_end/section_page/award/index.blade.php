@@ -19,7 +19,7 @@ use App\Http\Controllers\MyUtility as MyUt;
                         <i class="material-icons">add</i>
                         <span>Add new</span>
                     </a>
-                    <h2>award List</h2>
+                    <h2>Award and Media List</h2>
 
                 </div>
                 <div class="body">
@@ -30,6 +30,7 @@ use App\Http\Controllers\MyUtility as MyUt;
                                 <th>No</th>
                                 <th>Image</th>
                                 <th>Title</th>
+                                <th>Type</th>
                                 <th>Description</th>
                                 <th>Order</th>
                             </tr>
@@ -41,6 +42,7 @@ use App\Http\Controllers\MyUtility as MyUt;
                                     <td>{{$i++}}</td>
                                     <td><img src="{{$row->logo}}" height="50" alt=""></td>
                                     <td>{{$row->title}}</td>
+                                    <td>{{$row->award_type==0?"Award":"Media"}}</td>
                                     <td>{{$row->description}}</td>
                                     <td>{{$row->order}}</td>
 
