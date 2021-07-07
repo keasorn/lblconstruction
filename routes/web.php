@@ -117,5 +117,6 @@ Route::group(['prefix' => '/admin', 'middleware' => 'auth'], function () {
     Route::resource("/recommend", "App\Http\Controllers\RecommendController");
     Route::resource("/award", "App\Http\Controllers\AwardController");
     Route::resource("/project/{aId}/image", "App\Http\Controllers\ProjectImageController");
+    Route::resource("/project/{aId}/image2", "App\Http\Controllers\ProjectImageController");
 });
 /* END PAGE ADMIN ROUTE URI */

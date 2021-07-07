@@ -1,12 +1,12 @@
 <!-- About Us -->
 <!-- title-blogtop -->
 <img src="images/logo_footer.svg" style="position: fixed;width: 20px">
-<section class="cont-box cus-section" data-color="blue" id="about-us">
+<section class="cont-box cus-section" data-color="blue" id="about-us" style="background:#f0f0f0;">
 
     <!-- / title-blogtop -->
     <div class="container-fluid">
         <div class="background">
-            <div class="layer" style="background: white;"></div>
+            <div class="layer"></div>
         </div>
 
         <div class="container" style="margin-bottom: 80px;">

@@ -113,6 +113,10 @@
 
 
 <script>
+    $(window).load(function (){
+        $('.preloader').fadeOut('slow',function(){$(this).remove();});
+    });
+
     $(window).scroll(function () {
         // selectors
         var $window = $(window),
@@ -177,9 +181,9 @@ function compress($source)
         <i class="fa fa-download" aria-hidden="true"></i> Company Profile
     </a>
 </div>
-{{--<div class="preloader page-preloader">--}}
-{{--    <div class="preload-img"></div>--}}
-{{--</div>--}}
+<div class="preloader page-preloader">
+    <div class="preload-img"></div>
+</div>
 
 <!-- WRAPPER HEADER -->
 <div id="nav-anchor"></div>

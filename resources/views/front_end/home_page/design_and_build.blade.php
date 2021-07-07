@@ -1,6 +1,8 @@
 <!-- Design and Build -->
 <section id="design-build panel" data-color="white">
-    <div class="design_and_build" style="font-size: 50px;top: 140px;" >Design &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &  &nbsp;&nbsp;&nbsp;&nbsp; Build</div>
+    <div class="design_and_build" style="font-size: 50px;top: 140px;">Design &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &
+        &nbsp;&nbsp;&nbsp;&nbsp; Build
+    </div>
     <div class="containet-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 cus_first_video" style="height: 350px;">
@@ -13,17 +15,18 @@
                         </div>
                     </div>
 
-                    @if($design_build->design_bg != "/uploading/files/design_bg.mp4" ||$design_build->design_bg != "/uploading/files/design_bg.webm")
-                        <div id="myVideoFirst" class="layer darken-pseudo cus_main_video"
-                             style="background-image: url({{$design_build->design_bg}});">
-                        </div>
-                    @else
+                    @if($design_build->design_bg == "/uploading/files/design_bg.mp4" ||$design_build->design_bg == "/uploading/files/design_bg.webm")
+
                         <video autoplay muted loop id="myVideoFirst" class="cus_main_video"
                                style="width: 100%;">
                             <source src="{{$design_build->design_bg}}" type="video/mp4">
                             <source src="media/cloud.ogg" type="video/ogg">
                             <source src="media/cloud.webm" type="video/webm">
                         </video>
+                    @else
+                        <div id="myVideoFirst" class="layer darken-pseudo cus_main_video"
+                             style="background-image: url({{$design_build->design_bg}});">
+                        </div>
                     @endif
                 </div>
             </div>
@@ -36,16 +39,17 @@
                         </div>
                     </div>
 
-                    @if($design_build->build_bg != "/uploading/files/build_bg.mp4" ||$design_build->build_bg != "/uploading/files/build_bg.webm")
-                        <div id="myVideoFirst" class="layer darken-pseudo cus_main_video"
-                             style="background-image: url({{$design_build->build_bg}});">
-                        </div>
-                    @else
+                    @if($design_build->build_bg == "/uploading/files/build_bg.mp4" ||$design_build->build_bg == "/uploading/files/build_bg.webm")
+
                         <video autoplay muted loop id="myVideoSecond" class="cus_main_video" style="width: 100%;">
                             <source src="{{$design_build->build_bg}}" type="video/mp4">
                             <source src="media/cloud.ogg" type="video/ogg">
                             <source src="media/cloud.webm" type="video/webm">
                         </video>
+                    @else
+                        <div id="myVideoFirst" class="layer darken-pseudo cus_main_video"
+                             style="background-image: url({{$design_build->build_bg}});">
+                        </div>
                     @endif
                 </div>
             </div>
@@ -56,7 +60,7 @@
     <div class="container-fluid">
         <div class="background">
             <div class="layer fix-bg-image" style="background: url( uploading/files/design_build_bg.png);"></div>
-{{--            <div class="layer" style="background: rgb(0 44 88 / 95%);"></div>--}}
+            {{--            <div class="layer" style="background: rgb(0 44 88 / 95%);"></div>--}}
         </div>
 
         <div class="container cus_journey_sub_container" data-aos="fade-up">
@@ -102,5 +106,5 @@
         </div>
     </div>
 
-</section >
+</section>
 <!--End Design and Build -->

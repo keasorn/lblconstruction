@@ -18,10 +18,46 @@
                         US
                     </a>
                 </div>
-
+                <div class="col-xs-12" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos="fade-right"
+                     style="text-align:center; padding: 0px 0px 0px 0px;">
+                    <img src="/images/02_AboutUs_Discover-LBL_left01.gif"
+                         style="    width: 284px;
+                                position: relative;
+                                top: -459px;
+                                left: -464px;">
+                </div>
+                <div class="col-xs-12" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos="fade-right"
+                     style="text-align:center; padding: 0px 0px 0px 0px;">
+                    <img src="/images/02_AboutUs_Discover-LBL_left02.gif"
+                         style="
+                                    width: 284px;
+                                    position: relative;
+                                    top: -429px;
+                                    left: -363px;
+                            ">
+                </div>
+                <div class="col-xs-12" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos="fade-left"
+                     style="text-align:center; padding: 0px 0px 0px 0px;">
+                    <img src="/images/02_AboutUs_Discover-LBL_right01.gif"
+                         style="
+                         width: 284px;
+    position: relative;
+    top: -768px;
+    right: -469px;
+">
+                </div>
+                <div class="col-xs-12" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos="fade-left"
+                     style="text-align:center; padding: 0px 0px 0px 0px;">
+                    <img src="/images/02_AboutUs_Discover-LBL_right02.gif"
+                         style="width: 313px;
+    position: relative;
+    top: -708px;
+    right: -391px;">
+                </div>
                 <div class="col-xs-12" data-aos="fade-up" style="text-align:center; padding: 0px 0px 0px 0px;">
                     <img src="{{$aboutUs->cover}}" style="width:100%;    position: relative;top: -100px;">
                 </div>
+
 
             </div>
         </div>
