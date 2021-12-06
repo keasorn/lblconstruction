@@ -11,54 +11,44 @@
 
         <div class="container" style="margin-bottom: 80px;">
 
-            <div class="row">
+            <div class="row width-700">
                 <div class="cus_about_mobile" data-aos="fade-up"
-                     style="text-align:center; padding: 60px 0px; background:url('{{$aboutUs->discover}}') no-repeat center; height: 450px; padding-top: 140px;background-size:cover">
+                     style="text-align:center; padding: 60px 0px; background:url('/uploading/files/discover1.png') no-repeat center; height: 450px; padding-top: 140px;background-size:cover">
                     <a href="#none" class="btn-default btn-about" data-toggle="modal" data-target="#popupAboutUs">ABOUT
                         US
                     </a>
                 </div>
-                <div class="col-xs-12" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos="fade-right"
-                     style="text-align:center; padding: 0px 0px 0px 0px;">
-                    <img src="/images/02_AboutUs_Discover-LBL_left01.gif"
-                         style="    width: 284px;
-                                position: relative;
-                                top: -459px;
-                                left: -464px;">
-                </div>
-                <div class="col-xs-12" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos="fade-right"
-                     style="text-align:center; padding: 0px 0px 0px 0px;">
-                    <img src="/images/02_AboutUs_Discover-LBL_left02.gif"
-                         style="
-                                    width: 284px;
-                                    position: relative;
-                                    top: -429px;
-                                    left: -363px;
+                <img src="/images/02_AboutUs_Discover-LBL_left01.gif"
+                     style="width: 284px;
+    position: relative;
+    top: -505px;
+    left: -16px;" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+                     data-aos="fade-right">
+                <img src="/images/02_AboutUs_Discover-LBL_left02.gif" data-aos-easing="ease-out-cubic"
+                     data-aos-duration="1500" data-aos="fade-right"
+                     style="    width: 284px;
+    position: relative;
+    top: -320px;
+    left: -205px;
+
                             ">
-                </div>
-                <div class="col-xs-12" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos="fade-left"
-                     style="text-align:center; padding: 0px 0px 0px 0px;">
-                    <img src="/images/02_AboutUs_Discover-LBL_right01.gif"
-                         style="
-                         width: 284px;
+                <img src="/images/02_AboutUs_Discover-LBL_right01.gif"
+                     style="    width: 313px;
     position: relative;
-    top: -768px;
-    right: -469px;
-">
-                </div>
-                <div class="col-xs-12" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos="fade-left"
-                     style="text-align:center; padding: 0px 0px 0px 0px;">
-                    <img src="/images/02_AboutUs_Discover-LBL_right02.gif"
-                         style="width: 313px;
+    top: -500px;
+    right: -350px;
+
+" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos="fade-left">
+
+                <img src="/images/02_AboutUs_Discover-LBL_right02.gif"
+                     style="    width: 313px;
     position: relative;
-    top: -708px;
-    right: -391px;">
-                </div>
-                <div class="col-xs-12" data-aos="fade-up" style="text-align:center; padding: 0px 0px 0px 0px;">
-                    <img src="{{$aboutUs->cover}}" style="width:100%;    position: relative;top: -100px;">
-                </div>
+    top: -500px;
+    right: -800px;" data-aos-easing="ease-out-cubic" data-aos-duration="1500" data-aos="fade-left">
 
-
+                <img src="/images/about_bg.png" class="display-mobile" alt="" style="width:100%;    position: relative;    top: -440px;">
+                <img data-aos="fade-up" src="{{$aboutUs->cover}}" data-aos-duration="500"
+                     style="width:100%;    position: relative;    top: -440px;">
             </div>
         </div>
     </div>

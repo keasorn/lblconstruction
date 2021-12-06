@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e00f654-8ea4-4418-be73-a6f4537a45fc" name="Default" comment="add new two section more">
-      <change afterPath="$PROJECT_DIR$/public/images/02_AboutUs_Discover-LBL_bottom.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/02_AboutUs_Discover-LBL_left01.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/02_AboutUs_Discover-LBL_left02.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/02_AboutUs_Discover-LBL_right01.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/02_AboutUs_Discover-LBL_right02.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploading/discover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front_end/home_page/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front_end/home_page/archive-12-00-pm-20210719.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front_end/home_page/archive.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploading/files/discover.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploading/files/discover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploading/files/discover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploading/files/discover1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploading/files/discover.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploading/files/discover1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front_end/home_page/about_us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front_end/home_page/about_us.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front_end/home_page/board_director.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front_end/home_page/board_director.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front_end/home_page/design_and_build.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front_end/home_page/design_and_build.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front_end/home_page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front_end/home_page/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -443,6 +439,8 @@
       <workItem from="1625232269784" duration="40000" />
       <workItem from="1625460334039" duration="1396000" />
       <workItem from="1625638448019" duration="3286000" />
+      <workItem from="1625719682687" duration="8269000" />
+      <workItem from="1626856924272" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="add some slide photo">
       <created>1619872116351</created>

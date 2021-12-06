@@ -119,4 +119,9 @@ Route::group(['prefix' => '/admin', 'middleware' => 'auth'], function () {
     Route::resource("/project/{aId}/image", "App\Http\Controllers\ProjectImageController");
     Route::resource("/project/{aId}/image2", "App\Http\Controllers\ProjectImageController");
 });
+
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');
+    // return what you want
+});
 /* END PAGE ADMIN ROUTE URI */

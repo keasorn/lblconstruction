@@ -92,6 +92,32 @@
         background-image: url('/images/logo-w-over.png');
     }
 
+    .width-700{
+        height: 700px;
+    }
+    .display-mobile{
+        display: none;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .display-mobile{
+            display: block;
+        }
+        .cus_about_mobile{
+            display: none;
+        }
+        .width-700{
+            height: 300px !important;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+
+
+        .cont-box{
+            padding-top: 0px !important;
+        }
+    }
+
 </style>
 
 <script>
@@ -113,8 +139,10 @@
 
 
 <script>
-    $(window).load(function (){
-        $('.preloader').fadeOut('slow',function(){$(this).remove();});
+    $(window).load(function () {
+        $('.preloader').fadeOut('slow', function () {
+            $(this).remove();
+        });
     });
 
     $(window).scroll(function () {
